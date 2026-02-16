@@ -12,6 +12,6 @@
   "github": {
     "autoAlias": true,
     "silent": false,
-    "autoJobCancelation": false
+    "autoJobCancellation": false
   }
 }
