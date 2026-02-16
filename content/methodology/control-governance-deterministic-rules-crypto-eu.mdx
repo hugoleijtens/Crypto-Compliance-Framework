@@ -1,0 +1,67 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - Rule triggers prove illicit activity.
+  - A stable ruleset eliminates the need for review and recalibration.
+  - Explainability is optional when rules are deterministic.
+  - Automated outputs alone mandate reporting or exit decisions.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Deterministic compliance rules and heuristics used for crypto monitoring MUST be governed as controls: versioned, testable, explainable, and auditable.
+
+## Definition
+
+Rule governance is the control framework that defines rule purpose, inputs, assumptions, tests, drift checks, and decision boundaries for deterministic monitoring logic.
+
+## Why It Matters
+
+Deterministic logic without governance still creates opaque outcomes and inconsistent actions.
+
+## Failure Mode if Ignored
+
+Rules change without regression evidence, outputs become non-traceable, and indicators are misused as final determinations.
+
+## Scope & Non-Claims
+
+This entry is scoped to governance of deterministic controls in regulated banking environments in the EU/UK.
+
+This entry does not provide legal advice and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Risk scoring and calibration (crypto) (EU) (methodology)](/framework/methodology/risk-scoring-calibration-crypto-eu)
+- [Case escalation and suspicion assessment (crypto) (EU) (journey)](/framework/compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu)
+- [Documentation and audit trail requirements for crypto compliance (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

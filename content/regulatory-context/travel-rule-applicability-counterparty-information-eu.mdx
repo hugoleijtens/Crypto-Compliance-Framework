@@ -1,0 +1,67 @@
+---
+type: regulatory-context
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+regimes:
+  - AMLR
+  - MiCA
+  - TFR
+referencePolicy: EU_ONLY
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: regulatory_determination
+prohibitedInferences:
+  - On-chain address labels or heuristics alone satisfy Travel Rule information requirements.
+  - A transfer involving a self-hosted wallet is inherently illicit.
+  - Travel Rule compliance alone implies low AML risk.
+  - Absence of Travel Rule data proves suspicious activity without contextual review.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Travel Rule information requirements for transfers of crypto-assets MUST be determined by party roles, transfer type, and whether a CASP is involved.
+
+## Definition
+
+Within this framework, Travel Rule applicability is an explicit scope decision under EU rules, based on transfer context and CASP involvement, with required originator and beneficiary data obtained, validated, transmitted, and retained through compliant channels rather than inferred from on-chain visibility.
+
+## Why It Matters
+
+Role and scope errors cause regulatory and control failures. If teams treat blockchain visibility as equivalent to Travel Rule data, counterparty information quality and audit traceability degrade quickly.
+
+## Failure Mode if Ignored
+
+Transfers are processed without defensible applicability determination, required counterparty data is incomplete or non-auditable, and exception handling is inconsistent across self-hosted and CASP-linked flows.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for EU Travel Rule applicability and counterparty information handling.
+
+This entry does not provide legal advice, does not replace legal determination, and requires human validation for final compliance decisions.
+
+## Related Concepts
+
+- [CASP / VASP regulatory perimeter (EU) (regulatory-context)](/framework/regulatory-context/casp-vasp-regulatory-perimeter-eu)
+- [Regulatory scope of crypto compliance (EU) (regulatory-context)](/framework/regulatory-context/regulatory-scope-crypto-compliance-eu)
+- [Transaction monitoring and ongoing due diligence (crypto) (EU) (journey)](/framework/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu)
+
+## Sources
+
+- [TFR — Regulation (EU) 2023/1113](https://eur-lex.europa.eu/eli/reg/2023/1113/oj)
+- [MiCA — Regulation (EU) 2023/1114](https://eur-lex.europa.eu/eli/reg/2023/1114/oj)
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+

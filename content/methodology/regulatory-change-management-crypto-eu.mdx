@@ -1,0 +1,66 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+regimes:
+  - AMLR
+  - MiCA
+  - TFR
+referencePolicy: EU_ONLY
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - Controls remain compliant indefinitely without structured review.
+  - A deployed change is correct without post-change validation.
+  - Regulatory updates can be implemented without documenting test evidence.
+  - A single instrument update implies all dependent controls are updated.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Crypto compliance controls MUST be governed under a regulatory change-management process that tracks legal instruments, supervisory guidance, and internal control impacts with auditable implementation evidence.
+
+## Definition
+
+Regulatory change management is the controlled lifecycle for identifying rule changes, assessing impacts on policies/data/scenarios, implementing updates, and validating outcomes.
+
+## Why It Matters
+
+Without controlled change governance, control drift and hidden regressions accumulate during MiCA, TFR, AMLR, and DAC8 updates.
+
+## Failure Mode if Ignored
+
+Changes are implemented ad hoc, dependencies are missed, and audit evidence for testing and rollout decisions is absent.
+
+## Scope & Non-Claims
+
+This entry is scoped to operational governance in regulated banking environments in the EU/UK.
+
+This entry does not provide legal advice and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Documentation and audit trail requirements for crypto compliance (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+- [Travel Rule applicability and counterparty information (EU) (regulatory-context)](/framework/regulatory-context/travel-rule-applicability-counterparty-information-eu)
+- [DAC8 and CARF reporting: scope and evidence (EU) (regulatory-context)](/framework/regulatory-context/dac8-carf-reporting-scope-and-evidence-eu)
+
+## Sources
+
+- [MiCA — Regulation (EU) 2023/1114](https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng)
+- [TFR — Regulation (EU) 2023/1113](https://eur-lex.europa.eu/eli/reg/2023/1113/oj/eng)
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng)

@@ -1,0 +1,67 @@
+---
+type: definition
+status: published
+entryIntent: definition
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: attribution_ownership
+prohibitedInferences:
+  - Wallet clustering establishes legal ownership or beneficial ownership.
+  - Address reuse proves control by a single natural person.
+  - Behavioural similarity alone establishes common beneficial ownership.
+  - On-chain observations alone satisfy beneficial ownership verification requirements.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Beneficial ownership and control determinations in crypto contexts MUST be based on corroborated off-chain evidence and risk-based verification, not inferred from on-chain activity patterns alone.
+
+## Definition
+
+Within this framework, wallet usage, clustering, and behavioural similarity are investigative indicators that may support hypotheses, while beneficial ownership and control determinations require corroborated evidence of legal and operational control relationships.
+
+## Why It Matters
+
+Ownership attribution errors create serious compliance failures. Treating heuristics as determinations can misclassify counterparties and weaken defensibility of high-impact AML/CFT decisions.
+
+## Failure Mode if Ignored
+
+Heuristic outputs are presented as ownership facts, multi-party control models are collapsed into single-owner assumptions, and evidence gaps are omitted from decision records.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for ownership/control handling in crypto contexts.
+
+This entry does not provide legal advice, does not replace legal ownership determination, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Proof of wallet control (EU) (methodology)](/framework/methodology/proof-of-wallet-control-eu)
+- [Self-hosted wallet risk controls (EU) (regulatory-context)](/framework/regulatory-context/self-hosted-wallet-risk-controls-eu)
+- [Documentation and audit trail (crypto compliance) (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations — Recommendation 10 and Interpretive Note](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

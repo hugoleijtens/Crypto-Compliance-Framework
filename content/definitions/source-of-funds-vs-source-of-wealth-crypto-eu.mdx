@@ -1,0 +1,69 @@
+---
+type: definition
+status: published
+entryIntent: definition
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - A plausible narrative without verifiable records constitutes proof of SoF or SoW.
+  - >-
+    On-chain transaction history alone is sufficient to establish SoW without off-chain corroboration where risk
+    requires it.
+  - SoF verification for a single transaction is equivalent to full SoW verification.
+  - Positive SoF/SoW findings mandate automatic onboarding approval or prohibit account exit decisions.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Source of Funds (SoF) and Source of Wealth (SoW) are distinct compliance determinations: SoF explains the origin of a specific transfer or deposit, while SoW explains how the customer accumulated overall wealth over time.
+
+## Definition
+
+In crypto contexts, SoF is event-specific and typically requires transaction-path reconstruction with service-provider evidence, while SoW is longitudinal and requires accumulation narratives across relevant time windows, supported by verifiable records.
+
+## Why It Matters
+
+Conflating SoF and SoW weakens decision quality and auditability. Event-level verification does not replace longitudinal substantiation, and narrative plausibility without evidence produces non-defensible outcomes.
+
+## Failure Mode if Ignored
+
+CDD outputs become ambiguous, residual risk is not documented, and decisions rely on incomplete or non-traceable evidence, increasing supervisory and audit exposure.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for crypto-related SoF/SoW handling.
+
+This entry does not provide legal advice, does not replace legal interpretation, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Regulatory scope of crypto compliance (EU) (regulatory-context)](/framework/regulatory-context/regulatory-scope-crypto-compliance-eu)
+- [Wallets and portfolio-level assessment (EU) (model)](/framework/analysis-models/wallets-portfolio-level-assessment-eu)
+- [Transaction monitoring and ongoing due diligence (crypto) (EU) (journey)](/framework/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations — Recommendation 10 and Interpretive Note](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

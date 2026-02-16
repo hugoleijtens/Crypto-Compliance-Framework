@@ -1,0 +1,67 @@
+---
+type: journey
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - Crypto exposure alone justifies exit by default.
+  - A single alert, label, or typology match mandates exit.
+  - Exit implies the customer engaged in wrongdoing.
+  - Low risk score guarantees relationship retention.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Exit and de-risking decisions related to crypto exposure MUST be evidence-based, proportionate, and documented, with explicit human review and governance sign-off.
+
+## Definition
+
+Exit decisioning is a control outcome that evaluates whether residual risk can be managed within policy, based on corroborated evidence and documented alternatives.
+
+## Why It Matters
+
+Exit is high impact and must remain defensible, consistent, and separated from single-signal reactions.
+
+## Failure Mode if Ignored
+
+Institutions apply de-risking inconsistently, rely on isolated indicators, and cannot justify decisions under audit.
+
+## Scope & Non-Claims
+
+This entry is scoped to relationship-level de-risking and exit decisions in regulated banking environments in the EU/UK.
+
+This entry does not provide legal advice and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Case escalation and suspicion assessment (crypto) (EU) (journey)](/framework/compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu)
+- [Risk scoring and calibration (crypto) (EU) (methodology)](/framework/methodology/risk-scoring-calibration-crypto-eu)
+- [Documentation and audit trail requirements for crypto compliance (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

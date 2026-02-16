@@ -1,0 +1,15 @@
+{
+  "generatedAt": "2026-02-14T22:29:14+01:00",
+  "commits": [
+    {
+      "sha": "20f6a60f32c4f7e7ee53e9a7a992746d85f4e624",
+      "date": "2026-02-14T22:28:23+01:00",
+      "subject": "Regenerate machine exports with git provenance"
+    },
+    {
+      "sha": "b63a911055f0c79f4962100e132cab71e5eff930",
+      "date": "2026-02-14T22:28:03+01:00",
+      "subject": "Machine interface hardening v1.3.0"
+    }
+  ]
+}

@@ -1,0 +1,698 @@
+{
+  "schemaVersion": "1.3.0",
+  "generatedAt": "2026-02-14T22:29:14+01:00",
+  "nodes": [
+    {
+      "slug": "analysis-models/correspondent-relationships-nested-vasp-risk-eu",
+      "type": "model",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "analysis-models/defi-positions-yield-income-assessment-eu",
+      "type": "model",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "type": "model",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "type": "journey",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "compliance-journey/exit-de-risking-crypto-portfolio-decisions-eu",
+      "type": "journey",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "compliance-journey/onboarding-kyc-crypto-exposure-intake-eu",
+      "type": "journey",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "compliance-journey/suspicious-transaction-reporting-crypto-eu",
+      "type": "journey",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "type": "journey",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "definitions/beneficial-ownership-and-control-crypto-eu",
+      "type": "definition",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "type": "definition",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/adverse-media-osint-signals-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/control-governance-deterministic-rules-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/counterparty-risk-assessment-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/data-lineage-quality-controls-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/evidence-correlation-onchain-offchain-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/exchange-records-as-evidence-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/proof-of-wallet-control-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/record-retention-privacy-minimisation-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/regulatory-change-management-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/risk-scoring-calibration-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/sanctions-exposure-screening-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/structuring-and-layering-patterns-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "methodology/third-party-vendor-risk-blockchain-analytics-eu",
+      "type": "methodology",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "regulatory-context/dac8-carf-reporting-scope-and-evidence-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "regulatory-context/self-hosted-wallet-risk-controls-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    },
+    {
+      "slug": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "confidence": "high",
+      "risk": "medium",
+      "lastReviewed": "2026-02-14"
+    }
+  ],
+  "edges": [
+    {
+      "from": "analysis-models/correspondent-relationships-nested-vasp-risk-eu",
+      "to": "methodology/counterparty-risk-assessment-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "analysis-models/correspondent-relationships-nested-vasp-risk-eu",
+      "to": "methodology/sanctions-exposure-screening-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "analysis-models/correspondent-relationships-nested-vasp-risk-eu",
+      "to": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "analysis-models/defi-positions-yield-income-assessment-eu",
+      "to": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "analysis-models/defi-positions-yield-income-assessment-eu",
+      "to": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "analysis-models/defi-positions-yield-income-assessment-eu",
+      "to": "methodology/evidence-correlation-onchain-offchain-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "to": "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "to": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "to": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "to": "methodology/risk-scoring-calibration-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/exit-de-risking-crypto-portfolio-decisions-eu",
+      "to": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/exit-de-risking-crypto-portfolio-decisions-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/exit-de-risking-crypto-portfolio-decisions-eu",
+      "to": "methodology/risk-scoring-calibration-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/onboarding-kyc-crypto-exposure-intake-eu",
+      "to": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/onboarding-kyc-crypto-exposure-intake-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/onboarding-kyc-crypto-exposure-intake-eu",
+      "to": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/suspicious-transaction-reporting-crypto-eu",
+      "to": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/suspicious-transaction-reporting-crypto-eu",
+      "to": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/suspicious-transaction-reporting-crypto-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "to": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "to": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "to": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "definitions/beneficial-ownership-and-control-crypto-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "definitions/beneficial-ownership-and-control-crypto-eu",
+      "to": "methodology/proof-of-wallet-control-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "definitions/beneficial-ownership-and-control-crypto-eu",
+      "to": "regulatory-context/self-hosted-wallet-risk-controls-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "to": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "to": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/adverse-media-osint-signals-crypto-eu",
+      "to": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/adverse-media-osint-signals-crypto-eu",
+      "to": "methodology/counterparty-risk-assessment-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/adverse-media-osint-signals-crypto-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/control-governance-deterministic-rules-crypto-eu",
+      "to": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/control-governance-deterministic-rules-crypto-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/control-governance-deterministic-rules-crypto-eu",
+      "to": "methodology/risk-scoring-calibration-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/counterparty-risk-assessment-crypto-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/counterparty-risk-assessment-crypto-eu",
+      "to": "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/counterparty-risk-assessment-crypto-eu",
+      "to": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "to": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "to": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/data-lineage-quality-controls-crypto-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/data-lineage-quality-controls-crypto-eu",
+      "to": "methodology/evidence-correlation-onchain-offchain-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/data-lineage-quality-controls-crypto-eu",
+      "to": "methodology/risk-scoring-calibration-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "to": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "to": "methodology/evidence-correlation-onchain-offchain-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "to": "methodology/exchange-records-as-evidence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/evidence-correlation-onchain-offchain-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/evidence-correlation-onchain-offchain-eu",
+      "to": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/evidence-correlation-onchain-offchain-eu",
+      "to": "methodology/exchange-records-as-evidence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/exchange-records-as-evidence-crypto-eu",
+      "to": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/exchange-records-as-evidence-crypto-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/exchange-records-as-evidence-crypto-eu",
+      "to": "methodology/evidence-correlation-onchain-offchain-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/proof-of-wallet-control-eu",
+      "to": "definitions/beneficial-ownership-and-control-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/proof-of-wallet-control-eu",
+      "to": "regulatory-context/self-hosted-wallet-risk-controls-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/proof-of-wallet-control-eu",
+      "to": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/record-retention-privacy-minimisation-crypto-eu",
+      "to": "methodology/data-lineage-quality-controls-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/record-retention-privacy-minimisation-crypto-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/record-retention-privacy-minimisation-crypto-eu",
+      "to": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/regulatory-change-management-crypto-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/regulatory-change-management-crypto-eu",
+      "to": "regulatory-context/dac8-carf-reporting-scope-and-evidence-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/regulatory-change-management-crypto-eu",
+      "to": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/risk-scoring-calibration-crypto-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/risk-scoring-calibration-crypto-eu",
+      "to": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/risk-scoring-calibration-crypto-eu",
+      "to": "methodology/sanctions-exposure-screening-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/sanctions-exposure-screening-crypto-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/sanctions-exposure-screening-crypto-eu",
+      "to": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/sanctions-exposure-screening-crypto-eu",
+      "to": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/structuring-and-layering-patterns-crypto-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/structuring-and-layering-patterns-crypto-eu",
+      "to": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/structuring-and-layering-patterns-crypto-eu",
+      "to": "methodology/risk-scoring-calibration-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/third-party-vendor-risk-blockchain-analytics-eu",
+      "to": "methodology/counterparty-risk-assessment-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/third-party-vendor-risk-blockchain-analytics-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "methodology/third-party-vendor-risk-blockchain-analytics-eu",
+      "to": "methodology/sanctions-exposure-screening-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "to": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "to": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/dac8-carf-reporting-scope-and-evidence-eu",
+      "to": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/dac8-carf-reporting-scope-and-evidence-eu",
+      "to": "methodology/exchange-records-as-evidence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/dac8-carf-reporting-scope-and-evidence-eu",
+      "to": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "to": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "to": "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/self-hosted-wallet-risk-controls-eu",
+      "to": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/self-hosted-wallet-risk-controls-eu",
+      "to": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/self-hosted-wallet-risk-controls-eu",
+      "to": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "to": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "to": "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "kind": "related-concept"
+    },
+    {
+      "from": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "to": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "kind": "related-concept"
+    }
+  ]
+}

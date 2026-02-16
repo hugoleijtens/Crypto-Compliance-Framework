@@ -1,0 +1,67 @@
+---
+type: model
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: aggregation_risk
+prohibitedInferences:
+  - A regulated counterparty implies all downstream parties are regulated and low risk.
+  - Indirect exposure is irrelevant if a direct counterparty is known.
+  - Service chain complexity alone proves illicit activity.
+  - Lack of chain transparency automatically implies wrongdoing.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Nested service exposure MUST be assessed as indirect counterparty risk with explicit mapping of service chains and control responsibilities.
+
+## Definition
+
+This model maps multi-entity crypto service chains, identifies control ownership (CDD, Travel Rule, sanctions, monitoring), and evaluates indirect exposure over time.
+
+## Why It Matters
+
+Direct counterparties can mask downstream entities where actual risk and control gaps sit.
+
+## Failure Mode if Ignored
+
+Institutions assume end-to-end control coverage, while nested provider changes and unknown sub-chains create unmanaged exposure.
+
+## Scope & Non-Claims
+
+This entry is scoped to complex service-chain assessment in regulated banking environments in the EU/UK.
+
+This entry does not provide legal advice and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Counterparty risk assessment in crypto transactions (EU) (methodology)](/framework/methodology/counterparty-risk-assessment-crypto-eu)
+- [Travel Rule applicability and counterparty information (EU) (regulatory-context)](/framework/regulatory-context/travel-rule-applicability-counterparty-information-eu)
+- [Sanctions exposure and screening in crypto contexts (EU) (methodology)](/framework/methodology/sanctions-exposure-screening-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

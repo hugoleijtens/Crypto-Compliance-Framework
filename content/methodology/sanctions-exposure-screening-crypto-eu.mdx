@@ -1,0 +1,68 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - A wallet label or heuristic alone confirms a sanctions breach.
+  - Indirect exposure automatically implies prohibited dealing without contextual verification.
+  - Absence of a sanctions label implies absence of sanctions risk.
+  - Automated screening outcomes alone mandate freezing, reporting, or exit decisions without human validation.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Sanctions risk in crypto contexts MUST be assessed using validated sanctions lists and risk-based screening controls across counterparties, services, and exposure pathways, not solely via wallet heuristics.
+
+## Definition
+
+Within this framework, sanctions exposure screening is the controlled process of list-based matching, contextual review of direct and indirect exposure indicators, and documented human decisioning for escalation and resolution outcomes.
+
+## Why It Matters
+
+Heuristic-only approaches are error-prone and non-defensible. Sanctions controls require list provenance, controlled matching logic, and review traceability to avoid both over-blocking and missed risk.
+
+## Failure Mode if Ignored
+
+Decisions are made from labels without verified list context, escalation paths are inconsistently applied, and control outcomes cannot be reconstructed for audit or supervisory review.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for sanctions exposure screening in crypto contexts.
+
+This entry does not provide legal advice, does not determine legal liability, and requires human validation for final compliance decisions.
+
+## Related Concepts
+
+- [Crypto red flags and typologies in monitoring (EU) (methodology)](/framework/methodology/crypto-red-flags-typologies-monitoring-eu)
+- [Transaction monitoring and ongoing due diligence (crypto) (EU) (journey)](/framework/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu)
+- [Travel Rule applicability and counterparty information (EU) (regulatory-context)](/framework/regulatory-context/travel-rule-applicability-counterparty-information-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations — Recommendation 6 and Interpretive Note](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)
+

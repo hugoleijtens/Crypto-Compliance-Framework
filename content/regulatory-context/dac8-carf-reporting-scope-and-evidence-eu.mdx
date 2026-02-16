@@ -1,0 +1,67 @@
+---
+type: regulatory-context
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EU_DAC8
+  - OECD_CARF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: regulatory_determination
+prohibitedInferences:
+  - AML compliance automatically implies DAC8 reporting compliance.
+  - CARF adoption alone satisfies EU DAC8 obligations.
+  - Reporting scope can be inferred from product branding rather than legal assessment.
+  - Missing a reporting field proves wrongdoing without contextual review.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+DAC8-related reporting obligations MUST be assessed under EU legal scope and implemented controls, while CARF provides a global reporting standard that may inform data structuring and interoperability.
+
+## Definition
+
+Within this framework, DAC8 scope assessment is a legal and control determination for reportability under EU law, and CARF is an interoperability-oriented framework that can guide data modelling but does not replace EU legal scope determination.
+
+## Why It Matters
+
+Reporting and AML controls intersect but are not equivalent. Conflating these domains causes scope errors, incomplete lineage, and governance gaps.
+
+## Failure Mode if Ignored
+
+CARF is treated as legal scope, DAC8 applicability is undocumented, and reporting pipelines lack auditable lineage and exception governance.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for DAC8/CARF scope and evidence governance.
+
+This entry does not provide legal advice, does not substitute for legal text interpretation, and requires human validation for final reporting determinations.
+
+## Related Concepts
+
+- [Documentation and audit trail (crypto compliance) (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+- [Exchange records as evidence (crypto) (EU) (methodology)](/framework/methodology/exchange-records-as-evidence-crypto-eu)
+- [Regulatory scope of crypto compliance (EU) (regulatory-context)](/framework/regulatory-context/regulatory-scope-crypto-compliance-eu)
+
+## Sources
+
+- [EUR-Lex portal (DAC8 legal references)](https://eur-lex.europa.eu/)
+- [OECD tax information exchange and reporting resources](https://www.oecd.org/tax/exchange-of-tax-information/)
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)

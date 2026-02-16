@@ -1,0 +1,3329 @@
+{
+  "schemaVersion": "1.3.0",
+  "generatedAt": "2026-02-14T22:29:14+01:00",
+  "generatedFrom": {
+    "commitSha": "9bf812d66de45e1289a1cf3291772ecf497d228e",
+    "commitShaSource": "git",
+    "commitTime": "2026-02-14T22:29:14+01:00",
+    "commitTimeSource": "git",
+    "dirty": false,
+    "exportStatuses": [
+      "published"
+    ]
+  },
+  "policies": {
+    "conflictPolicy": {
+      "precedence": [
+        "EU_PRIMARY_LAW",
+        "EU_SUPERVISORY_GUIDANCE",
+        "FRAMEWORK_CANONICAL_ENTRY"
+      ],
+      "ifUnclear": "defer_to_human"
+    }
+  },
+  "entries": [
+    {
+      "slug": "analysis-models/correspondent-relationships-nested-vasp-risk-eu",
+      "type": "model",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Nested service exposure MUST be assessed as indirect counterparty risk with explicit mapping of service chains and control responsibilities.",
+      "definition": "This model maps multi-entity crypto service chains, identifies control ownership (CDD, Travel Rule, sanctions, monitoring), and evaluates indirect exposure over time.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "This model maps multi-entity crypto service chains, identifies control ownership (CDD, Travel Rule, sanctions, monitoring), and evaluates indirect exposure over time.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/analysis-models/correspondent-relationships-nested-vasp-risk-eu",
+      "relatedSlugs": [
+        "methodology/counterparty-risk-assessment-crypto-eu",
+        "methodology/sanctions-exposure-screening-crypto-eu",
+        "regulatory-context/travel-rule-applicability-counterparty-information-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A regulated counterparty implies all downstream parties are regulated and low risk.",
+        "Indirect exposure is irrelevant if a direct counterparty is known.",
+        "Lack of chain transparency automatically implies wrongdoing.",
+        "Service chain complexity alone proves illicit activity."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A regulated counterparty implies all downstream parties are regulated and low risk.",
+          "Indirect exposure is irrelevant if a direct counterparty is known.",
+          "Lack of chain transparency automatically implies wrongdoing.",
+          "Service chain complexity alone proves illicit activity."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Direct counterparties can mask downstream entities where actual risk and control gaps sit.",
+      "failureModeSummary": "Institutions assume end-to-end control coverage, while nested provider changes and unknown sub-chains create unmanaged exposure.",
+      "scopeNonClaimsSummary": "This entry is scoped to complex service-chain assessment in regulated banking environments in the EU/UK.",
+      "source": {
+        "contentPath": "content/analysis-models/correspondent-relationships-nested-vasp-risk-eu.mdx"
+      },
+      "contentHash": "sha256:d49fe200a7c14d84d685958c7557047bf00037832a502940d08ba3d91b9730e2"
+    },
+    {
+      "slug": "analysis-models/defi-positions-yield-income-assessment-eu",
+      "type": "model",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "DeFi-related positions and yield MUST be assessed as part of portfolio-level exposure and income patterns, using verifiable evidence and explainable aggregation over time.",
+      "definition": "Within this framework, DeFi assessment is a time-based interpretation of protocol events, position states, and valuation assumptions that distinguishes principal, yield, and realized outcomes where evidence supports it.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, DeFi assessment is a time-based interpretation of protocol events, position states, and valuation assumptions that distinguishes principal, yield, and realized outcomes where evidence supports it.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/analysis-models/defi-positions-yield-income-assessment-eu",
+      "relatedSlugs": [
+        "analysis-models/wallets-portfolio-level-assessment-eu",
+        "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+        "methodology/evidence-correlation-onchain-offchain-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 1 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 2,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A single snapshot of positions is sufficient for SoW conclusions.",
+        "DeFi participation implies illicit activity.",
+        "Portfolio complexity alone implies money laundering.",
+        "Yield estimates without documented assumptions constitute verified income."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A single snapshot of positions is sufficient for SoW conclusions.",
+          "DeFi participation implies illicit activity.",
+          "Portfolio complexity alone implies money laundering.",
+          "Yield estimates without documented assumptions constitute verified income."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 1,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Snapshot-only views miss income dynamics and can misstate wealth narratives. Time-windowed evidence and explicit assumptions are required for defensible outcomes.",
+      "failureModeSummary": "Complexity is over-interpreted, valuation assumptions remain implicit, and conclusions cannot be traced to underlying events.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for DeFi exposure and yield assessment.",
+      "source": {
+        "contentPath": "content/analysis-models/defi-positions-yield-income-assessment-eu.mdx"
+      },
+      "contentHash": "sha256:b4beed4810c7c6ff90e2c2e8a14398e84a004541b6bb677654c800951bef6ae3"
+    },
+    {
+      "slug": "analysis-models/wallets-portfolio-level-assessment-eu",
+      "type": "model",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto risk assessment MUST be performed at portfolio level rather than on isolated wallets where multiple wallets collectively represent economic exposure, control indicators, or coordinated transactional behaviour.",
+      "definition": "Within this framework, portfolio-level wallet assessment is the aggregation of related wallet and service activity using documented criteria (behavioural, temporal, and transactional) to evaluate risk holistically while preserving traceability to wallet-level evidence.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "FATF",
+        "MiCA"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, portfolio-level wallet assessment is the aggregation of related wallet and service activity using documented criteria (behavioural, temporal, and transactional) to evaluate risk holistically while preserving traceabil",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/analysis-models/wallets-portfolio-level-assessment-eu",
+      "relatedSlugs": [
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+        "regulatory-context/regulatory-scope-crypto-compliance-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "MiCA — Regulation (EU) 2023/1114",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 1 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "Aggregation of wallets establishes legal ownership or control.",
+        "Higher aggregate volume or velocity alone implies illicit activity.",
+        "Portfolio size alone determines customer or counterparty risk.",
+        "Shared infrastructure or tooling proves common beneficial ownership."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "Aggregation of wallets establishes legal ownership or control.",
+          "Higher aggregate volume or velocity alone implies illicit activity.",
+          "Portfolio size alone determines customer or counterparty risk.",
+          "Shared infrastructure or tooling proves common beneficial ownership."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 2,
+          "T1_SUPERVISORY_GUIDANCE": 1,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Single-wallet analysis misses distributed behaviour. In regulated environments, risk often emerges through patterns across wallets and services over time, not through isolated address snapshots.",
+      "failureModeSummary": "Risk conclusions are fragmented and non-defensible, with over-reliance on single-wallet signals, weak exposure narratives, and aggregation decisions that cannot be reproduced during audit review.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for portfolio-level assessment of crypto exposure.",
+      "source": {
+        "contentPath": "content/analysis-models/wallets-portfolio-level-assessment-eu.mdx"
+      },
+      "contentHash": "sha256:7884e1905147f22ce04aa2d616abcab4037f8a8f54603a88bdff428c912574fb"
+    },
+    {
+      "slug": "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "type": "journey",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Escalation and suspicion assessment MUST be driven by documented indicators, contextual analysis, and corroborating evidence, with human review for high-impact outcomes.",
+      "definition": "Within this framework, case escalation is the governed process of converting indicators into reviewable suspicion assessments through evidence weighting, context analysis, and explicit resolution records.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, case escalation is the governed process of converting indicators into reviewable suspicion assessments through evidence weighting, context analysis, and explicit resolution records.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+      "relatedSlugs": [
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "methodology/crypto-red-flags-typologies-monitoring-eu",
+        "methodology/risk-scoring-calibration-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 20 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A high risk score mandates reporting or exit without human assessment.",
+        "Absence of a single indicator implies absence of suspicion.",
+        "An alert proves suspicious activity.",
+        "Typology alignment alone equals confirmed suspicion."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A high risk score mandates reporting or exit without human assessment.",
+          "Absence of a single indicator implies absence of suspicion.",
+          "An alert proves suspicious activity.",
+          "Typology alignment alone equals confirmed suspicion."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Alerts and scores are signals, not outcomes. Without explicit assessment and sign-off controls, escalation quality and consistency degrade quickly.",
+      "failureModeSummary": "Automation substitutes for review, thresholds drift without governance, and case outcomes are not auditable or reproducible.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for escalation and suspicion assessment in crypto compliance.",
+      "source": {
+        "contentPath": "content/compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:5a121b83e0644adf14b53b95dec15a0a9128de4ae1ef1725c8f8de4c28b12a79"
+    },
+    {
+      "slug": "compliance-journey/exit-de-risking-crypto-portfolio-decisions-eu",
+      "type": "journey",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Exit and de-risking decisions related to crypto exposure MUST be evidence-based, proportionate, and documented, with explicit human review and governance sign-off.",
+      "definition": "Exit decisioning is a control outcome that evaluates whether residual risk can be managed within policy, based on corroborated evidence and documented alternatives.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Exit decisioning is a control outcome that evaluates whether residual risk can be managed within policy, based on corroborated evidence and documented alternatives.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/compliance-journey/exit-de-risking-crypto-portfolio-decisions-eu",
+      "relatedSlugs": [
+        "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+        "methodology/risk-scoring-calibration-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A single alert, label, or typology match mandates exit.",
+        "Crypto exposure alone justifies exit by default.",
+        "Exit implies the customer engaged in wrongdoing.",
+        "Low risk score guarantees relationship retention."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A single alert, label, or typology match mandates exit.",
+          "Crypto exposure alone justifies exit by default.",
+          "Exit implies the customer engaged in wrongdoing.",
+          "Low risk score guarantees relationship retention."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Exit is high impact and must remain defensible, consistent, and separated from single-signal reactions.",
+      "failureModeSummary": "Institutions apply de-risking inconsistently, rely on isolated indicators, and cannot justify decisions under audit.",
+      "scopeNonClaimsSummary": "This entry is scoped to relationship-level de-risking and exit decisions in regulated banking environments in the EU/UK.",
+      "source": {
+        "contentPath": "content/compliance-journey/exit-de-risking-crypto-portfolio-decisions-eu.mdx"
+      },
+      "contentHash": "sha256:59655e6cf102256edc750e6e809f1c30d1218bfad5078d9807a5c59bb010055c"
+    },
+    {
+      "slug": "compliance-journey/onboarding-kyc-crypto-exposure-intake-eu",
+      "type": "journey",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto exposure MUST be explicitly captured during onboarding and periodically refreshed through structured intake that supports portfolio-level assessment and evidence correlation.",
+      "definition": "Crypto onboarding intake is the controlled collection of wallet identifiers, service relationships, portfolio scope, and evidence requests needed for CDD, SoF/SoW, and ODD.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Crypto onboarding intake is the controlled collection of wallet identifiers, service relationships, portfolio scope, and evidence requests needed for CDD, SoF/SoW, and ODD.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/compliance-journey/onboarding-kyc-crypto-exposure-intake-eu",
+      "relatedSlugs": [
+        "analysis-models/wallets-portfolio-level-assessment-eu",
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "definitions/source-of-funds-vs-source-of-wealth-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A single wallet address represents the full customer crypto exposure by default.",
+        "Crypto exposure disclosure automatically implies elevated risk.",
+        "Non-disclosure automatically proves intent to conceal.",
+        "Onboarding declarations alone constitute verification without evidence where risk requires it."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A single wallet address represents the full customer crypto exposure by default.",
+          "Crypto exposure disclosure automatically implies elevated risk.",
+          "Non-disclosure automatically proves intent to conceal.",
+          "Onboarding declarations alone constitute verification without evidence where risk requires it."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Weak intake creates blind spots that propagate into monitoring, source analysis, and escalation quality.",
+      "failureModeSummary": "Portfolio scope remains implicit, off-chain services are missed, and downstream controls operate on incomplete context.",
+      "scopeNonClaimsSummary": "This entry is scoped to onboarding and periodic refresh workflows in regulated banking environments in the EU/UK.",
+      "source": {
+        "contentPath": "content/compliance-journey/onboarding-kyc-crypto-exposure-intake-eu.mdx"
+      },
+      "contentHash": "sha256:6180163d404cea6b9e00d8edad47f000d908aad5ddcecf178ace7a31fc6d51d0"
+    },
+    {
+      "slug": "compliance-journey/suspicious-transaction-reporting-crypto-eu",
+      "type": "journey",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Suspicious transaction reporting decisions in crypto contexts MUST be based on documented suspicion assessment, corroborated evidence, and human review.",
+      "definition": "In this framework, reporting is a governed decision stage where indicators, context, corroboration, and alternatives are evaluated before a final outcome.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "In this framework, reporting is a governed decision stage where indicators, context, corroboration, and alternatives are evaluated before a final outcome.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/compliance-journey/suspicious-transaction-reporting-crypto-eu",
+      "relatedSlugs": [
+        "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+        "methodology/crypto-red-flags-typologies-monitoring-eu",
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A label or heuristic proves suspicious activity.",
+        "A single red flag mandates reporting.",
+        "Automation can replace human decisioning for reporting.",
+        "No label means no suspicion is possible."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A label or heuristic proves suspicious activity.",
+          "A single red flag mandates reporting.",
+          "Automation can replace human decisioning for reporting.",
+          "No label means no suspicion is possible."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Conflating indicators with determinations causes over-reporting, under-reporting, and inconsistent supervisory defensibility.",
+      "failureModeSummary": "Case files lack coherent rationale, exculpatory evidence is omitted, and reporting outcomes cannot be reconstructed.",
+      "scopeNonClaimsSummary": "This entry is scoped to suspicion assessment and reporting workflows in regulated banking environments in the EU/UK.",
+      "source": {
+        "contentPath": "content/compliance-journey/suspicious-transaction-reporting-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:9e12abdb062ee70998ccd757d366275338bcb29537412ad8ae8667274ff0feb3"
+    },
+    {
+      "slug": "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "type": "journey",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto-related transaction monitoring and ongoing due diligence MUST be continuous, risk-based, and proportionate to the customer, portfolio, and activity profile rather than event-only or onboarding-limited.",
+      "definition": "Within this framework, ongoing due diligence for crypto activity means periodic and trigger-based reassessment of exposure, behavioural patterns, counterparties, and service usage across on-chain and relevant off-chain contexts, with documented monitoring logic and human-reviewed outcomes.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "FATF",
+        "MiCA"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, ongoing due diligence for crypto activity means periodic and trigger-based reassessment of exposure, behavioural patterns, counterparties, and service usage across on-chain and relevant off-chain contexts, with docume",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+      "relatedSlugs": [
+        "analysis-models/wallets-portfolio-level-assessment-eu",
+        "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+        "regulatory-context/regulatory-scope-crypto-compliance-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "MiCA — Regulation (EU) 2023/1114",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 10 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A single alert or anomaly constitutes proof of money laundering or terrorist financing.",
+        "Automated monitoring outputs alone mandate SAR/STR filing without human assessment.",
+        "Stable historical behaviour eliminates the need for future monitoring.",
+        "Use of specific crypto tools or services automatically implies illicit intent."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A single alert or anomaly constitutes proof of money laundering or terrorist financing.",
+          "Automated monitoring outputs alone mandate SAR/STR filing without human assessment.",
+          "Stable historical behaviour eliminates the need for future monitoring.",
+          "Use of specific crypto tools or services automatically implies illicit intent."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 2,
+          "T1_SUPERVISORY_GUIDANCE": 1,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Crypto exposure evolves quickly. Event-limited controls miss behavioural shifts and emerging patterns, while continuous monitoring supports timely escalation and defensible decisions.",
+      "failureModeSummary": "Monitoring becomes episodic and non-reproducible, alerts cannot be tied to defined scenarios, and ODD actions are inconsistently documented, creating audit and supervisory weaknesses.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for crypto transaction monitoring and ongoing due diligence.",
+      "source": {
+        "contentPath": "content/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:d3e6ccd3c8d62a60775a98223ce26a81018603c088b09cc52509aacea69b14e7"
+    },
+    {
+      "slug": "definitions/beneficial-ownership-and-control-crypto-eu",
+      "type": "definition",
+      "status": "published",
+      "entryIntent": "definition",
+      "canonicalStatement": "Beneficial ownership and control determinations in crypto contexts MUST be based on corroborated off-chain evidence and risk-based verification, not inferred from on-chain activity patterns alone.",
+      "definition": "Within this framework, wallet usage, clustering, and behavioural similarity are investigative indicators that may support hypotheses, while beneficial ownership and control determinations require corroborated evidence of legal and operational control relationships.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, wallet usage, clustering, and behavioural similarity are investigative indicators that may support hypotheses, while beneficial ownership and control determinations require corroborated evidence of legal and operation",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/definitions/beneficial-ownership-and-control-crypto-eu",
+      "relatedSlugs": [
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+        "methodology/proof-of-wallet-control-eu",
+        "regulatory-context/self-hosted-wallet-risk-controls-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 10 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "Address reuse proves control by a single natural person.",
+        "Behavioural similarity alone establishes common beneficial ownership.",
+        "On-chain observations alone satisfy beneficial ownership verification requirements.",
+        "Wallet clustering establishes legal ownership or beneficial ownership."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "Address reuse proves control by a single natural person.",
+          "Behavioural similarity alone establishes common beneficial ownership.",
+          "On-chain observations alone satisfy beneficial ownership verification requirements.",
+          "Wallet clustering establishes legal ownership or beneficial ownership."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Ownership attribution errors create serious compliance failures. Treating heuristics as determinations can misclassify counterparties and weaken defensibility of high-impact AML/CFT decisions.",
+      "failureModeSummary": "Heuristic outputs are presented as ownership facts, multi-party control models are collapsed into single-owner assumptions, and evidence gaps are omitted from decision records.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for ownership/control handling in crypto contexts.",
+      "source": {
+        "contentPath": "content/definitions/beneficial-ownership-and-control-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:99ce8a878d59cf01f5c784569c2c178c5c641d063dc65ce9093e3b947d95eae8"
+    },
+    {
+      "slug": "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "type": "definition",
+      "status": "published",
+      "entryIntent": "definition",
+      "canonicalStatement": "Source of Funds (SoF) and Source of Wealth (SoW) are distinct compliance determinations: SoF explains the origin of a specific transfer or deposit, while SoW explains how the customer accumulated overall wealth over time.",
+      "definition": "In crypto contexts, SoF is event-specific and typically requires transaction-path reconstruction with service-provider evidence, while SoW is longitudinal and requires accumulation narratives across relevant time windows, supported by verifiable records.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "In crypto contexts, SoF is event-specific and typically requires transaction-path reconstruction with service-provider evidence, while SoW is longitudinal and requires accumulation narratives across relevant time windows, supported by verif",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+      "relatedSlugs": [
+        "analysis-models/wallets-portfolio-level-assessment-eu",
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "regulatory-context/regulatory-scope-crypto-compliance-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 10 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A plausible narrative without verifiable records constitutes proof of SoF or SoW.",
+        "On-chain transaction history alone is sufficient to establish SoW without off-chain corroboration where risk requires it.",
+        "Positive SoF/SoW findings mandate automatic onboarding approval or prohibit account exit decisions.",
+        "SoF verification for a single transaction is equivalent to full SoW verification."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A plausible narrative without verifiable records constitutes proof of SoF or SoW.",
+          "On-chain transaction history alone is sufficient to establish SoW without off-chain corroboration where risk requires it.",
+          "Positive SoF/SoW findings mandate automatic onboarding approval or prohibit account exit decisions.",
+          "SoF verification for a single transaction is equivalent to full SoW verification."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Conflating SoF and SoW weakens decision quality and auditability. Event-level verification does not replace longitudinal substantiation, and narrative plausibility without evidence produces non-defensible outcomes.",
+      "failureModeSummary": "CDD outputs become ambiguous, residual risk is not documented, and decisions rely on incomplete or non-traceable evidence, increasing supervisory and audit exposure.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for crypto-related SoF/SoW handling.",
+      "source": {
+        "contentPath": "content/definitions/source-of-funds-vs-source-of-wealth-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:242647be8930be7d69548b44f0017ea97036b3fcd63cadd088dbdaa7bdef5088"
+    },
+    {
+      "slug": "methodology/adverse-media-osint-signals-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Adverse media and OSINT-derived signals MAY inform risk assessment and investigative prioritization but MUST be validated and contextualized; they are not conclusive proof.",
+      "definition": "Within this framework, OSINT is evidence-adjacent input used to generate and prioritize hypotheses that require corroboration with primary records.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, OSINT is evidence-adjacent input used to generate and prioritize hypotheses that require corroboration with primary records.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/adverse-media-osint-signals-crypto-eu",
+      "relatedSlugs": [
+        "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+        "methodology/counterparty-risk-assessment-crypto-eu",
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "Absence of adverse media implies low risk.",
+        "Adverse media proves illicit activity.",
+        "Online allegations mandate reporting without corroboration.",
+        "OSINT-derived identity links establish beneficial ownership."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "Absence of adverse media implies low risk.",
+          "Adverse media proves illicit activity.",
+          "Online allegations mandate reporting without corroboration.",
+          "OSINT-derived identity links establish beneficial ownership."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Unverified public claims are noisy and can introduce severe false positives if treated as determinations.",
+      "failureModeSummary": "Escalation and reporting decisions are made on unverified allegations, with weak defensibility and poor proportionality.",
+      "scopeNonClaimsSummary": "This entry is scoped to use of adverse media and OSINT in regulated banking environments in the EU/UK.",
+      "source": {
+        "contentPath": "content/methodology/adverse-media-osint-signals-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:fd275d401a2b77c8318d8a152747e02e25899858d1794acb6fe8291e83d5df21"
+    },
+    {
+      "slug": "methodology/control-governance-deterministic-rules-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Deterministic compliance rules and heuristics used for crypto monitoring MUST be governed as controls: versioned, testable, explainable, and auditable.",
+      "definition": "Rule governance is the control framework that defines rule purpose, inputs, assumptions, tests, drift checks, and decision boundaries for deterministic monitoring logic.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Rule governance is the control framework that defines rule purpose, inputs, assumptions, tests, drift checks, and decision boundaries for deterministic monitoring logic.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/control-governance-deterministic-rules-crypto-eu",
+      "relatedSlugs": [
+        "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+        "methodology/risk-scoring-calibration-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A stable ruleset eliminates the need for review and recalibration.",
+        "Automated outputs alone mandate reporting or exit decisions.",
+        "Explainability is optional when rules are deterministic.",
+        "Rule triggers prove illicit activity."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A stable ruleset eliminates the need for review and recalibration.",
+          "Automated outputs alone mandate reporting or exit decisions.",
+          "Explainability is optional when rules are deterministic.",
+          "Rule triggers prove illicit activity."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Deterministic logic without governance still creates opaque outcomes and inconsistent actions.",
+      "failureModeSummary": "Rules change without regression evidence, outputs become non-traceable, and indicators are misused as final determinations.",
+      "scopeNonClaimsSummary": "This entry is scoped to governance of deterministic controls in regulated banking environments in the EU/UK.",
+      "source": {
+        "contentPath": "content/methodology/control-governance-deterministic-rules-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:9e424bbddf11bcce491b1565c26b06a7067cc95eb0fe00b82a0cae42746b4088"
+    },
+    {
+      "slug": "methodology/counterparty-risk-assessment-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Counterparty risk MUST be assessed using role, service type, jurisdiction, and observed behaviour, supported by provenance-tagged evidence and governance controls.",
+      "definition": "Within this framework, counterparty risk assessment is a repeatable classification and review process that combines verified status data, behavioural evidence, and jurisdiction context to determine proportionate controls.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, counterparty risk assessment is a repeatable classification and review process that combines verified status data, behavioural evidence, and jurisdiction context to determine proportionate controls.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/counterparty-risk-assessment-crypto-eu",
+      "relatedSlugs": [
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+        "regulatory-context/travel-rule-applicability-counterparty-information-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 1 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A single label proves entity identity or regulatory status.",
+        "Counterparty classification alone mandates SAR/STR filing or exit.",
+        "Known or regulated counterparty equals low AML risk.",
+        "Unknown counterparty equals illicit activity."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A single label proves entity identity or regulatory status.",
+          "Counterparty classification alone mandates SAR/STR filing or exit.",
+          "Known or regulated counterparty equals low AML risk.",
+          "Unknown counterparty equals illicit activity."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Counterparty labels drift and can be wrong. Decisions require provenance, verification, and time-bounded assumptions to remain defensible.",
+      "failureModeSummary": "Labels are treated as determinations, jurisdiction assumptions become stale, and applied controls cannot be traced to documented rationale.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for counterparty risk assessment in crypto contexts.",
+      "source": {
+        "contentPath": "content/methodology/counterparty-risk-assessment-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:6a5a382086d7160821e3e0d7f3a9e72a252999ba77d86a657ff0195dbd931050"
+    },
+    {
+      "slug": "methodology/crypto-red-flags-typologies-monitoring-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto red flags and typologies are indicators of potential ML/TF risk that require contextual analysis and corroborating evidence; they are not determinative findings of illicit activity.",
+      "definition": "Within this framework, red flags and typologies are structured investigative indicators used to support monitoring and risk reassessment when mapped to observable evidence and evaluated against customer, portfolio, temporal, and jurisdictional context.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, red flags and typologies are structured investigative indicators used to support monitoring and risk reassessment when mapped to observable evidence and evaluated against customer, portfolio, temporal, and jurisdictio",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/crypto-red-flags-typologies-monitoring-eu",
+      "relatedSlugs": [
+        "analysis-models/wallets-portfolio-level-assessment-eu",
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "definitions/source-of-funds-vs-source-of-wealth-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Typologies and Risk Indicators",
+          "url": "https://www.fatf-gafi.org/en/publications/Typologies.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "Interaction with high-risk jurisdictions automatically implies illicit intent.",
+        "The presence of a red flag proves money laundering or terrorist financing.",
+        "Typology alignment mandates SAR/STR filing without human assessment.",
+        "Use of privacy-enhancing tools or mixers alone constitutes criminal activity."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "Interaction with high-risk jurisdictions automatically implies illicit intent.",
+          "The presence of a red flag proves money laundering or terrorist financing.",
+          "Typology alignment mandates SAR/STR filing without human assessment.",
+          "Use of privacy-enhancing tools or mixers alone constitutes criminal activity."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Indicator-led monitoring is necessary but easily over-applied. Without context and corroboration, institutions can escalate noise, miss material patterns, and produce weakly defensible decisions.",
+      "failureModeSummary": "Indicators are treated as conclusions, escalation decisions lack rationale, and monitoring outcomes drift away from risk-based proportionality and human-review requirements.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for applying red flags and typologies in crypto monitoring.",
+      "source": {
+        "contentPath": "content/methodology/crypto-red-flags-typologies-monitoring-eu.mdx"
+      },
+      "contentHash": "sha256:e7440f5372775c2e049e8f632189ac63b8ff0a89a3b04b796ec665c197305cc1"
+    },
+    {
+      "slug": "methodology/data-lineage-quality-controls-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto compliance outcomes MUST be supported by data lineage and data quality controls that allow reconstruction of inputs, transformations, and outputs across on-chain and off-chain sources.",
+      "definition": "Data lineage in this framework is the traceable chain from source records through normalization, reconciliation, and aggregation to final compliance outputs, with versioned transformations and quality checks.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Data lineage in this framework is the traceable chain from source records through normalization, reconciliation, and aggregation to final compliance outputs, with versioned transformations and quality checks.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/data-lineage-quality-controls-crypto-eu",
+      "relatedSlugs": [
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+        "methodology/evidence-correlation-onchain-offchain-eu",
+        "methodology/risk-scoring-calibration-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A clean output implies clean data without lineage checks.",
+        "Aggregation metrics alone prove legitimacy or illicitness.",
+        "Data completeness can be assumed from a single provider export.",
+        "Missing fields automatically imply suspicious activity."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A clean output implies clean data without lineage checks.",
+          "Aggregation metrics alone prove legitimacy or illicitness.",
+          "Data completeness can be assumed from a single provider export.",
+          "Missing fields automatically imply suspicious activity."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Without lineage, portfolio aggregation, scoring, and suspicion assessments are not auditable or reproducible.",
+      "failureModeSummary": "Outputs cannot be traced to inputs, transformation logic becomes opaque, and unresolved data quality issues contaminate downstream decisions.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational data-governance controls for crypto compliance.",
+      "source": {
+        "contentPath": "content/methodology/data-lineage-quality-controls-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:5dcde8e9315c66332c14c2a0e07a53f8042464a7fa3858f82265d20bcb3569cb"
+    },
+    {
+      "slug": "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto compliance outcomes MUST be supported by an auditable trail that records evidence provenance, analytical steps, decisions, and residual risk, enabling independent review.",
+      "definition": "Within this framework, an audit trail is the structured record of evidence sources, transformations, assumptions, decision rationale, and approvals needed to reconstruct compliance outcomes.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE"
+      ],
+      "referencePolicy": "EU_ONLY",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, an audit trail is the structured record of evidence sources, transformations, assumptions, decision rationale, and approvals needed to reconstruct compliance outcomes.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu",
+      "relatedSlugs": [
+        "compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu",
+        "methodology/evidence-correlation-onchain-offchain-eu",
+        "methodology/exchange-records-as-evidence-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        }
+      ],
+      "sourceAuthorityCount": 2,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu"
+      ],
+      "prohibitedInferences": [
+        "A final outcome alone is sufficient without evidence provenance.",
+        "Auditability is optional for crypto-related decisions.",
+        "Documentation can be reconstructed later without loss.",
+        "Lack of recorded issues implies lack of risk."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A final outcome alone is sufficient without evidence provenance.",
+          "Auditability is optional for crypto-related decisions.",
+          "Documentation can be reconstructed later without loss.",
+          "Lack of recorded issues implies lack of risk."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 1,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Without traceability, decisions cannot be defended. Auditability is a core control property, not an optional documentation step.",
+      "failureModeSummary": "Evidence provenance is lost, assumptions remain implicit, and decision outcomes cannot be reconstructed under audit or supervisory scrutiny.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for audit-trail requirements in crypto compliance.",
+      "source": {
+        "contentPath": "content/methodology/documentation-and-audit-trail-crypto-compliance-eu.mdx"
+      },
+      "contentHash": "sha256:f0082739732b225ee8ac829e46e5c3c58418604c6d9e0ce159b6bc769061b43d"
+    },
+    {
+      "slug": "methodology/evidence-correlation-onchain-offchain-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Compliance conclusions in crypto contexts MUST be derived from correlated on-chain and off-chain evidence where risk requires, using explicit linkage and explainable aggregation logic.",
+      "definition": "Within this framework, evidence correlation is the documented process of linking transaction lineage, account records, and contextual records to produce reproducible conclusions and explicit gap statements.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, evidence correlation is the documented process of linking transaction lineage, account records, and contextual records to produce reproducible conclusions and explicit gap statements.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/evidence-correlation-onchain-offchain-eu",
+      "relatedSlugs": [
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+        "methodology/exchange-records-as-evidence-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 10 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 2,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "Aggregate correlation metrics alone determine risk outcomes.",
+        "Correlation impossibility implies illicit activity.",
+        "Off-chain exports override contradictory on-chain evidence without investigation.",
+        "On-chain data alone proves legitimacy or economic purpose."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "Aggregate correlation metrics alone determine risk outcomes.",
+          "Correlation impossibility implies illicit activity.",
+          "Off-chain exports override contradictory on-chain evidence without investigation.",
+          "On-chain data alone proves legitimacy or economic purpose."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 1,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "On-chain and off-chain records answer different questions. Correlation is required to connect movement, identity, and economic purpose in a defensible way.",
+      "failureModeSummary": "Analyses rely on single-source assumptions, provenance is unclear, and unresolved linkage gaps are not captured as residual risk.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for evidence correlation in crypto compliance.",
+      "source": {
+        "contentPath": "content/methodology/evidence-correlation-onchain-offchain-eu.mdx"
+      },
+      "contentHash": "sha256:e9aab3726225fbd31f06f0c9119310a3bcf6b6dd2ef39d627f9834a9b1e870e0"
+    },
+    {
+      "slug": "methodology/exchange-records-as-evidence-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Exchange exports are supporting evidence and MUST be evaluated for completeness, provenance, and consistency; they do not automatically constitute authoritative records in isolation.",
+      "definition": "Within this framework, exchange records are evidentiary inputs that require provenance capture, completeness checks, and reconciliation against other records for high-impact compliance decisions.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE"
+      ],
+      "referencePolicy": "EU_ONLY",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, exchange records are evidentiary inputs that require provenance capture, completeness checks, and reconciliation against other records for high-impact compliance decisions.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/exchange-records-as-evidence-crypto-eu",
+      "relatedSlugs": [
+        "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+        "methodology/evidence-correlation-onchain-offchain-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        }
+      ],
+      "sourceAuthorityCount": 2,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu"
+      ],
+      "prohibitedInferences": [
+        "Absence of entries proves absence of activity.",
+        "CSV/API exports are complete and authoritative by default.",
+        "Exchange records alone establish SoW without corroboration where risk requires.",
+        "Minor inconsistencies always imply wrongdoing."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "Absence of entries proves absence of activity.",
+          "CSV/API exports are complete and authoritative by default.",
+          "Exchange records alone establish SoW without corroboration where risk requires.",
+          "Minor inconsistencies always imply wrongdoing."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 1,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Export artefacts are operationally useful but can be incomplete or inconsistent. Treating them as self-authenticating records creates false confidence.",
+      "failureModeSummary": "Unverified exports drive conclusions, key activity lines are missed, and unresolved inconsistencies are not governed through documented resolution.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for exchange-record evidence handling.",
+      "source": {
+        "contentPath": "content/methodology/exchange-records-as-evidence-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:6e0417466f174931b9c1012b04d2c9ae30677c4a4fbd56a812c1f174abcf7f3f"
+    },
+    {
+      "slug": "methodology/proof-of-wallet-control-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Proof-of-wallet-control methods may evidence access to a private key at a point in time, but do not establish legal ownership, beneficial ownership, or ongoing control.",
+      "definition": "Within this framework, proof-of-control is a time-scoped and method-scoped evidentiary artefact (for example signature or verification transfer) used to support narrow control assertions under documented policy constraints.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU"
+      ],
+      "regimes": [
+        "AMLR",
+        "TFR"
+      ],
+      "referencePolicy": "EU_ONLY",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, proof-of-control is a time-scoped and method-scoped evidentiary artefact (for example signature or verification transfer) used to support narrow control assertions under documented policy constraints.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/proof-of-wallet-control-eu",
+      "relatedSlugs": [
+        "definitions/beneficial-ownership-and-control-crypto-eu",
+        "regulatory-context/self-hosted-wallet-risk-controls-eu",
+        "regulatory-context/travel-rule-applicability-counterparty-information-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "TFR — Regulation (EU) 2023/1113",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1113/oj"
+        }
+      ],
+      "sourceAuthorityCount": 2,
+      "sourceDomains": [
+        "eur-lex.europa.eu"
+      ],
+      "prohibitedInferences": [
+        "A one-time proof implies continuous control over time.",
+        "A proof implies exclusive control unless evidenced separately.",
+        "A signed message proves legal ownership or beneficial ownership.",
+        "Failure to prove control is evidence of illicit activity."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A one-time proof implies continuous control over time.",
+          "A proof implies exclusive control unless evidenced separately.",
+          "A signed message proves legal ownership or beneficial ownership.",
+          "Failure to prove control is evidence of illicit activity."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 2,
+          "T1_SUPERVISORY_GUIDANCE": 0,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Control evidence is often over-interpreted. Without strict scope boundaries, institutions convert technical proofs into legal conclusions they do not support.",
+      "failureModeSummary": "One-off control artefacts are reused as ownership determinations, fraud and delegation risks are ignored, and control statements exceed evidentiary validity.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation of proof-of-control artefacts.",
+      "source": {
+        "contentPath": "content/methodology/proof-of-wallet-control-eu.mdx"
+      },
+      "contentHash": "sha256:05b45b0a850a7b162b7164bef57bba0424d7a89a4d6021dc78a89a4391b0b056"
+    },
+    {
+      "slug": "methodology/record-retention-privacy-minimisation-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto compliance evidence retention MUST balance auditability with privacy and data minimization, retaining only what is necessary to support decisions and obligations.",
+      "definition": "This control defines purpose-based retention, access control, lifecycle enforcement, and deletion logging for crypto compliance evidence.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU"
+      ],
+      "regimes": [
+        "AMLR",
+        "TFR"
+      ],
+      "referencePolicy": "EU_ONLY",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "This control defines purpose-based retention, access control, lifecycle enforcement, and deletion logging for crypto compliance evidence.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/record-retention-privacy-minimisation-crypto-eu",
+      "relatedSlugs": [
+        "methodology/data-lineage-quality-controls-crypto-eu",
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+        "regulatory-context/travel-rule-applicability-counterparty-information-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        },
+        {
+          "title": "TFR — Regulation (EU) 2023/1113",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1113/oj/eng"
+        }
+      ],
+      "sourceAuthorityCount": 2,
+      "sourceDomains": [
+        "eur-lex.europa.eu"
+      ],
+      "prohibitedInferences": [
+        "Deletion implies wrongdoing or concealment.",
+        "More data is always better for compliance.",
+        "Raw data accumulation guarantees auditability.",
+        "Retention policies can be informal or undocumented."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "Deletion implies wrongdoing or concealment.",
+          "More data is always better for compliance.",
+          "Raw data accumulation guarantees auditability.",
+          "Retention policies can be informal or undocumented."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 2,
+          "T1_SUPERVISORY_GUIDANCE": 0,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Unbounded retention increases exposure and governance risk; weak retention breaks auditability.",
+      "failureModeSummary": "Sensitive data accumulates without purpose mapping, retention schedules are unenforced, and evidence handling becomes non-defensible.",
+      "scopeNonClaimsSummary": "This entry is scoped to record-retention and privacy governance in regulated banking environments in the EU/UK.",
+      "source": {
+        "contentPath": "content/methodology/record-retention-privacy-minimisation-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:51046aa67db142befe7f425b3b029e2c5aaf9d87586bbf80037b37b2f079d527"
+    },
+    {
+      "slug": "methodology/regulatory-change-management-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto compliance controls MUST be governed under a regulatory change-management process that tracks legal instruments, supervisory guidance, and internal control impacts with auditable implementation evidence.",
+      "definition": "Regulatory change management is the controlled lifecycle for identifying rule changes, assessing impacts on policies/data/scenarios, implementing updates, and validating outcomes.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU"
+      ],
+      "regimes": [
+        "AMLR",
+        "MiCA",
+        "TFR"
+      ],
+      "referencePolicy": "EU_ONLY",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Regulatory change management is the controlled lifecycle for identifying rule changes, assessing impacts on policies/data/scenarios, implementing updates, and validating outcomes.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/regulatory-change-management-crypto-eu",
+      "relatedSlugs": [
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+        "regulatory-context/dac8-carf-reporting-scope-and-evidence-eu",
+        "regulatory-context/travel-rule-applicability-counterparty-information-eu"
+      ],
+      "sources": [
+        {
+          "title": "MiCA — Regulation (EU) 2023/1114",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj/eng"
+        },
+        {
+          "title": "TFR — Regulation (EU) 2023/1113",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1113/oj/eng"
+        },
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu"
+      ],
+      "prohibitedInferences": [
+        "A deployed change is correct without post-change validation.",
+        "A single instrument update implies all dependent controls are updated.",
+        "Controls remain compliant indefinitely without structured review.",
+        "Regulatory updates can be implemented without documenting test evidence."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A deployed change is correct without post-change validation.",
+          "A single instrument update implies all dependent controls are updated.",
+          "Controls remain compliant indefinitely without structured review.",
+          "Regulatory updates can be implemented without documenting test evidence."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 3,
+          "T1_SUPERVISORY_GUIDANCE": 0,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Without controlled change governance, control drift and hidden regressions accumulate during MiCA, TFR, AMLR, and DAC8 updates.",
+      "failureModeSummary": "Changes are implemented ad hoc, dependencies are missed, and audit evidence for testing and rollout decisions is absent.",
+      "scopeNonClaimsSummary": "This entry is scoped to operational governance in regulated banking environments in the EU/UK.",
+      "source": {
+        "contentPath": "content/methodology/regulatory-change-management-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:e4b8854c6088d2960c37ad0655bb212c536c747d5659371ad26b66f5cb9ae61e"
+    },
+    {
+      "slug": "methodology/risk-scoring-calibration-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto risk scoring MUST be risk-based, explainable, and calibrated to observable evidence and control objectives; it MUST NOT be treated as a definitive determination of illicit activity or regulatory compliance.",
+      "definition": "Within this framework, risk scoring calibration is the governed process of defining measurable inputs, weighting and threshold logic, periodic review, and drift monitoring so scores remain proportionate to institutional obligations and decision use-cases.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, risk scoring calibration is the governed process of defining measurable inputs, weighting and threshold logic, periodic review, and drift monitoring so scores remain proportionate to institutional obligations and deci",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/risk-scoring-calibration-crypto-eu",
+      "relatedSlugs": [
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "methodology/crypto-red-flags-typologies-monitoring-eu",
+        "methodology/sanctions-exposure-screening-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 1 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A high risk score proves money laundering, terrorist financing, or sanctions violations.",
+        "A low risk score proves compliance or eliminates monitoring needs.",
+        "Risk scoring outputs alone mandate SAR/STR filing or account exit without human assessment.",
+        "Risk scoring thresholds are universally applicable across institutions without local calibration."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A high risk score proves money laundering, terrorist financing, or sanctions violations.",
+          "A low risk score proves compliance or eliminates monitoring needs.",
+          "Risk scoring outputs alone mandate SAR/STR filing or account exit without human assessment.",
+          "Risk scoring thresholds are universally applicable across institutions without local calibration."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Uncalibrated or opaque scoring creates false precision. Without traceable logic and review discipline, scores become non-defensible and can distort prioritisation, due-diligence depth, and escalation outcomes.",
+      "failureModeSummary": "Scoring logic cannot be linked to evidence, threshold changes are undocumented, and high-impact decisions are driven by score outputs alone, creating governance, audit, and supervisory risk.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for explainable risk scoring and calibration in crypto compliance contexts.",
+      "source": {
+        "contentPath": "content/methodology/risk-scoring-calibration-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:55b72acd28013a49c9d65d61e6390b437d595cbcdc1fa862327e464c91c0ad7f"
+    },
+    {
+      "slug": "methodology/sanctions-exposure-screening-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Sanctions risk in crypto contexts MUST be assessed using validated sanctions lists and risk-based screening controls across counterparties, services, and exposure pathways, not solely via wallet heuristics.",
+      "definition": "Within this framework, sanctions exposure screening is the controlled process of list-based matching, contextual review of direct and indirect exposure indicators, and documented human decisioning for escalation and resolution outcomes.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, sanctions exposure screening is the controlled process of list-based matching, contextual review of direct and indirect exposure indicators, and documented human decisioning for escalation and resolution outcomes.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/sanctions-exposure-screening-crypto-eu",
+      "relatedSlugs": [
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "methodology/crypto-red-flags-typologies-monitoring-eu",
+        "regulatory-context/travel-rule-applicability-counterparty-information-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 6 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A wallet label or heuristic alone confirms a sanctions breach.",
+        "Absence of a sanctions label implies absence of sanctions risk.",
+        "Automated screening outcomes alone mandate freezing, reporting, or exit decisions without human validation.",
+        "Indirect exposure automatically implies prohibited dealing without contextual verification."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A wallet label or heuristic alone confirms a sanctions breach.",
+          "Absence of a sanctions label implies absence of sanctions risk.",
+          "Automated screening outcomes alone mandate freezing, reporting, or exit decisions without human validation.",
+          "Indirect exposure automatically implies prohibited dealing without contextual verification."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Heuristic-only approaches are error-prone and non-defensible. Sanctions controls require list provenance, controlled matching logic, and review traceability to avoid both over-blocking and missed risk.",
+      "failureModeSummary": "Decisions are made from labels without verified list context, escalation paths are inconsistently applied, and control outcomes cannot be reconstructed for audit or supervisory review.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for sanctions exposure screening in crypto contexts.",
+      "source": {
+        "contentPath": "content/methodology/sanctions-exposure-screening-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:3b7a276b1236f695ef062d73723b790c0eb3627fac549a30240cfeda1b6c2b42"
+    },
+    {
+      "slug": "methodology/structuring-and-layering-patterns-crypto-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Structuring and layering patterns are risk indicators that may increase ML/TF concern when supported by contextual evidence and purpose analysis; pattern recognition alone is insufficient for suspicion determinations.",
+      "definition": "Within this framework, structuring/layering detection is a documented pattern process using explicit time windows and behavioural conditions to produce reviewable indicators rather than determinations.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, structuring/layering detection is a documented pattern process using explicit time windows and behavioural conditions to produce reviewable indicators rather than determinations.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/structuring-and-layering-patterns-crypto-eu",
+      "relatedSlugs": [
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "methodology/crypto-red-flags-typologies-monitoring-eu",
+        "methodology/risk-scoring-calibration-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "FATF Typologies and Risk Indicators",
+          "url": "https://www.fatf-gafi.org/en/publications/Typologies.html"
+        }
+      ],
+      "sourceAuthorityCount": 2,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "High frequency alone constitutes suspicion.",
+        "Pattern similarity proves money laundering or terrorist financing.",
+        "Scenario triggers mandate SAR/STR filing without human assessment.",
+        "Transaction complexity implies illicit purpose."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "High frequency alone constitutes suspicion.",
+          "Pattern similarity proves money laundering or terrorist financing.",
+          "Scenario triggers mandate SAR/STR filing without human assessment.",
+          "Transaction complexity implies illicit purpose."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 1,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Pattern tools can over-trigger if unconstrained. Explicit definitions and context checks are required to separate investigative value from false certainty.",
+      "failureModeSummary": "Pattern triggers are treated as conclusions, corroborating and exculpatory evidence is ignored, and escalation decisions lose proportionality and traceability.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for structuring/layering indicators in crypto activity.",
+      "source": {
+        "contentPath": "content/methodology/structuring-and-layering-patterns-crypto-eu.mdx"
+      },
+      "contentHash": "sha256:3aeb518aaa20be0a5ad100ce39aff0686f7136deecb35c0ea60eab7ff2146a57"
+    },
+    {
+      "slug": "methodology/third-party-vendor-risk-blockchain-analytics-eu",
+      "type": "methodology",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Blockchain analytics and data providers MUST be governed as third-party dependencies with explicit limits on reliability, coverage, and label accuracy.",
+      "definition": "Vendor-risk governance defines provenance capture, confidence handling, conflict resolution, and drift monitoring for third-party blockchain labels and analytics outputs.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EBA_GUIDANCE",
+        "FATF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Vendor-risk governance defines provenance capture, confidence handling, conflict resolution, and drift monitoring for third-party blockchain labels and analytics outputs.",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/methodology/third-party-vendor-risk-blockchain-analytics-eu",
+      "relatedSlugs": [
+        "methodology/counterparty-risk-assessment-crypto-eu",
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+        "methodology/sanctions-exposure-screening-crypto-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng"
+        },
+        {
+          "title": "EBA Guidelines on ML/TF Risk Factors",
+          "url": "https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors"
+        },
+        {
+          "title": "FATF Recommendations",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.eba.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A single provider is sufficient for complete coverage.",
+        "Absence of labels implies absence of risk.",
+        "Vendor labels prove entity identity, sanctions breach, or illicit activity.",
+        "Vendor outputs alone mandate reporting or exit decisions."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A single provider is sufficient for complete coverage.",
+          "Absence of labels implies absence of risk.",
+          "Vendor labels prove entity identity, sanctions breach, or illicit activity.",
+          "Vendor outputs alone mandate reporting or exit decisions."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.eba.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 1,
+          "T1_SUPERVISORY_GUIDANCE": 2,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Vendor outputs are evidence-adjacent signals; unmanaged reliance creates silent model and process risk.",
+      "failureModeSummary": "Labels are treated as truth, conflicts are unresolved, and high-impact decisions are made without corroboration.",
+      "scopeNonClaimsSummary": "This entry is scoped to third-party analytics governance in regulated banking environments in the EU/UK.",
+      "source": {
+        "contentPath": "content/methodology/third-party-vendor-risk-blockchain-analytics-eu.mdx"
+      },
+      "contentHash": "sha256:77c027862d07210355723ce2ebe7fb92ffb436ec569433a757866aea69feb4f9"
+    },
+    {
+      "slug": "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "The determination of whether an entity qualifies as a Crypto-Asset Service Provider (CASP) under EU law MUST be assessed per activity and per jurisdiction.",
+      "definition": "Within this framework, CASP/VASP perimeter assessment means verifying which specific services are regulated under MiCA for a given entity, in a specific jurisdiction, and separating that determination from AML/CFT obligations that can still apply independently where crypto-derived value intersects with the regulated financial system.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "FATF",
+        "MiCA"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, CASP/VASP perimeter assessment means verifying which specific services are regulated under MiCA for a given entity, in a specific jurisdiction, and separating that determination from AML/CFT obligations that can still",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/regulatory-context/casp-vasp-regulatory-perimeter-eu",
+      "relatedSlugs": [
+        "analysis-models/wallets-portfolio-level-assessment-eu",
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "regulatory-context/regulatory-scope-crypto-compliance-eu"
+      ],
+      "sources": [
+        {
+          "title": "MiCA — Regulation (EU) 2023/1114",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj"
+        },
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "FATF Recommendations — Recommendation 15 and Interpretive Note",
+          "url": "https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.fatf-gafi.org"
+      ],
+      "prohibitedInferences": [
+        "A single licence claim cannot be extrapolated to all services, entities, or jurisdictions.",
+        "Absence of CASP authorisation does not imply illegality or criminal intent.",
+        "CASP authorisation does not imply low AML risk.",
+        "FATF VASP categorisation cannot be used alone to determine EU regulatory obligations."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A single licence claim cannot be extrapolated to all services, entities, or jurisdictions.",
+          "Absence of CASP authorisation does not imply illegality or criminal intent.",
+          "CASP authorisation does not imply low AML risk.",
+          "FATF VASP categorisation cannot be used alone to determine EU regulatory obligations."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.fatf-gafi.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 2,
+          "T1_SUPERVISORY_GUIDANCE": 1,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Perimeter mistakes create control design errors. If teams infer authorisation status from branding, interface design, or partial licensing claims, they can over-trust counterparties, under-scope AML controls, and produce non-defensible regulatory narratives.",
+      "failureModeSummary": "CASP/VASP labels are treated as broad risk conclusions rather than scoped legal classifications. This results in weak counterparty classification, inconsistent CDD depth, and unreliable decisions on travel-rule and ongoing due-diligence applicability.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for EU perimeter assessment.",
+      "source": {
+        "contentPath": "content/regulatory-context/casp-vasp-regulatory-perimeter-eu.mdx"
+      },
+      "contentHash": "sha256:ccb5ac090b8410e9e54015f8d9807d8e0286d767d087b025fd1200092e80398a"
+    },
+    {
+      "slug": "regulatory-context/dac8-carf-reporting-scope-and-evidence-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "DAC8-related reporting obligations MUST be assessed under EU legal scope and implemented controls, while CARF provides a global reporting standard that may inform data structuring and interoperability.",
+      "definition": "Within this framework, DAC8 scope assessment is a legal and control determination for reportability under EU law, and CARF is an interoperability-oriented framework that can guide data modelling but does not replace EU legal scope determination.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU",
+        "GLOBAL"
+      ],
+      "regimes": [
+        "AMLR",
+        "EU_DAC8",
+        "OECD_CARF"
+      ],
+      "referencePolicy": "EU_AND_GLOBAL",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, DAC8 scope assessment is a legal and control determination for reportability under EU law, and CARF is an interoperability-oriented framework that can guide data modelling but does not replace EU legal scope determina",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/regulatory-context/dac8-carf-reporting-scope-and-evidence-eu",
+      "relatedSlugs": [
+        "methodology/documentation-and-audit-trail-crypto-compliance-eu",
+        "methodology/exchange-records-as-evidence-crypto-eu",
+        "regulatory-context/regulatory-scope-crypto-compliance-eu"
+      ],
+      "sources": [
+        {
+          "title": "EUR-Lex portal (DAC8 legal references)",
+          "url": "https://eur-lex.europa.eu/"
+        },
+        {
+          "title": "OECD tax information exchange and reporting resources",
+          "url": "https://www.oecd.org/tax/exchange-of-tax-information/"
+        },
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu",
+        "www.oecd.org"
+      ],
+      "prohibitedInferences": [
+        "AML compliance automatically implies DAC8 reporting compliance.",
+        "CARF adoption alone satisfies EU DAC8 obligations.",
+        "Missing a reporting field proves wrongdoing without contextual review.",
+        "Reporting scope can be inferred from product branding rather than legal assessment."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "AML compliance automatically implies DAC8 reporting compliance.",
+          "CARF adoption alone satisfies EU DAC8 obligations.",
+          "Missing a reporting field proves wrongdoing without contextual review.",
+          "Reporting scope can be inferred from product branding rather than legal assessment."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu",
+          "www.oecd.org"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 2,
+          "T1_SUPERVISORY_GUIDANCE": 0,
+          "T2_INDUSTRY_STANDARD": 1,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Reporting and AML controls intersect but are not equivalent. Conflating these domains causes scope errors, incomplete lineage, and governance gaps.",
+      "failureModeSummary": "CARF is treated as legal scope, DAC8 applicability is undocumented, and reporting pipelines lack auditable lineage and exception governance.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for DAC8/CARF scope and evidence governance.",
+      "source": {
+        "contentPath": "content/regulatory-context/dac8-carf-reporting-scope-and-evidence-eu.mdx"
+      },
+      "contentHash": "sha256:18b0e6f5c81d6efd473839839793849698cdc61c05588df31aad546a5c8efca5"
+    },
+    {
+      "slug": "regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Crypto compliance obligations apply whenever crypto-derived value intersects with the regulated financial system, irrespective of whether the institution offers crypto products or services.",
+      "definition": "For EU AML/CFT scope determination in regulated banking environments, crypto-derived value includes proceeds, conversions, or transfers originating from crypto-assets as defined under MiCA, and scope must be determined by value exposure rather than product labels.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU"
+      ],
+      "regimes": [
+        "AMLR",
+        "MiCA",
+        "TFR"
+      ],
+      "referencePolicy": "EU_ONLY",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "For EU AML/CFT scope determination in regulated banking environments, crypto-derived value includes proceeds, conversions, or transfers originating from crypto-assets as defined under MiCA, and scope must be determined by value exposure rat",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/regulatory-context/regulatory-scope-crypto-compliance-eu",
+      "relatedSlugs": [
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+        "regulatory-context/casp-vasp-regulatory-perimeter-eu"
+      ],
+      "sources": [
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "MiCA — Regulation (EU) 2023/1114",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj"
+        },
+        {
+          "title": "TFR — Regulation (EU) 2023/1113",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1113/oj"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu"
+      ],
+      "prohibitedInferences": [
+        "MiCA authorisation status cannot be used in isolation to infer AML risk levels.",
+        "Product or marketing labels cannot be used to exclude AML scope.",
+        "The absence of direct crypto services does not imply absence of crypto compliance obligations."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "MiCA authorisation status cannot be used in isolation to infer AML risk levels.",
+          "Product or marketing labels cannot be used to exclude AML scope.",
+          "The absence of direct crypto services does not imply absence of crypto compliance obligations."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 3,
+          "T1_SUPERVISORY_GUIDANCE": 0,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Scope errors at intake create downstream control gaps. If institutions treat crypto exposure as out of scope based on product taxonomy alone, AML/CFT controls can be misapplied even when crypto-originated fiat inflows are present.",
+      "failureModeSummary": "Controls are excluded based on labels instead of exposure, resulting in undocumented scope assumptions, incomplete control mapping, and weak audit defensibility when crypto-related flows enter regulated channels.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for AML/CFT scope determination in EU contexts.",
+      "source": {
+        "contentPath": "content/regulatory-context/regulatory-scope-crypto-compliance-eu.mdx"
+      },
+      "contentHash": "sha256:2baf2858dc8cb474051984915df615efdcfe07dd60b49f4400a91cb9af892bf1"
+    },
+    {
+      "slug": "regulatory-context/self-hosted-wallet-risk-controls-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Self-hosted wallet interactions MUST be handled with explicit risk-based controls and evidence requirements that distinguish ownership or control evidence from on-chain activity observations.",
+      "definition": "Within this framework, self-hosted wallet handling is a documented control process for determining applicability, evidence depth, and residual risk for transfers involving non-custodial addresses, with ownership/control evidence evaluated separately from transactional visibility.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU"
+      ],
+      "regimes": [
+        "AMLR",
+        "MiCA",
+        "TFR"
+      ],
+      "referencePolicy": "EU_ONLY",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, self-hosted wallet handling is a documented control process for determining applicability, evidence depth, and residual risk for transfers involving non-custodial addresses, with ownership/control evidence evaluated s",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/regulatory-context/self-hosted-wallet-risk-controls-eu",
+      "relatedSlugs": [
+        "analysis-models/wallets-portfolio-level-assessment-eu",
+        "definitions/source-of-funds-vs-source-of-wealth-crypto-eu",
+        "regulatory-context/travel-rule-applicability-counterparty-information-eu"
+      ],
+      "sources": [
+        {
+          "title": "TFR — Regulation (EU) 2023/1113",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1113/oj"
+        },
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        },
+        {
+          "title": "MiCA — Regulation (EU) 2023/1114",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu"
+      ],
+      "prohibitedInferences": [
+        "A single proof-of-control event implies ongoing exclusive control over time.",
+        "Address reuse or behavioural patterns alone establish beneficial ownership.",
+        "On-chain transaction history alone satisfies ownership/control evidence requirements.",
+        "Self-hosted wallet usage proves illicit intent or activity."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A single proof-of-control event implies ongoing exclusive control over time.",
+          "Address reuse or behavioural patterns alone establish beneficial ownership.",
+          "On-chain transaction history alone satisfies ownership/control evidence requirements.",
+          "Self-hosted wallet usage proves illicit intent or activity."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 3,
+          "T1_SUPERVISORY_GUIDANCE": 0,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Self-hosted wallet flows increase evidence complexity. Without explicit controls, institutions can over-infer ownership from activity traces or under-document risk rationale in high-impact decisions.",
+      "failureModeSummary": "Handling becomes ad hoc, ownership/control assumptions are made without acceptable evidence, and evidence gaps are not tracked with residual risk, weakening audit and supervisory defensibility.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for self-hosted wallet control and evidence handling in EU contexts.",
+      "source": {
+        "contentPath": "content/regulatory-context/self-hosted-wallet-risk-controls-eu.mdx"
+      },
+      "contentHash": "sha256:1e403cc04eee7b2ae6ba5a1b8e7451ea5eb88a7f7c473f3fb67b1012d7c67b13"
+    },
+    {
+      "slug": "regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "type": "regulatory-context",
+      "status": "published",
+      "entryIntent": "interpretation",
+      "canonicalStatement": "Travel Rule information requirements for transfers of crypto-assets MUST be determined by party roles, transfer type, and whether a CASP is involved.",
+      "definition": "Within this framework, Travel Rule applicability is an explicit scope decision under EU rules, based on transfer context and CASP involvement, with required originator and beneficiary data obtained, validated, transmitted, and retained through compliant channels rather than inferred from on-chain visibility.",
+      "scope": "Regulated banking environments in EU/UK",
+      "confidence": "high",
+      "risk": "medium",
+      "jurisdictions": [
+        "EU"
+      ],
+      "regimes": [
+        "AMLR",
+        "MiCA",
+        "TFR"
+      ],
+      "referencePolicy": "EU_ONLY",
+      "citationVerified": true,
+      "agentUsage": {
+        "allowed": [
+          "policy_explanation",
+          "report_drafting",
+          "terminology_alignment"
+        ],
+        "forbidden": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "embeddingHint": "Within this framework, Travel Rule applicability is an explicit scope decision under EU rules, based on transfer context and CASP involvement, with required originator and beneficiary data obtained, validated, transmitted, and retained thro",
+      "lastReviewed": "2026-02-14",
+      "canonicalUrl": "/framework/regulatory-context/travel-rule-applicability-counterparty-information-eu",
+      "relatedSlugs": [
+        "compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu",
+        "regulatory-context/casp-vasp-regulatory-perimeter-eu",
+        "regulatory-context/regulatory-scope-crypto-compliance-eu"
+      ],
+      "sources": [
+        {
+          "title": "TFR — Regulation (EU) 2023/1113",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1113/oj"
+        },
+        {
+          "title": "MiCA — Regulation (EU) 2023/1114",
+          "url": "https://eur-lex.europa.eu/eli/reg/2023/1114/oj"
+        },
+        {
+          "title": "AMLR — Regulation (EU) 2024/1624",
+          "url": "https://eur-lex.europa.eu/eli/reg/2024/1624/oj"
+        }
+      ],
+      "sourceAuthorityCount": 3,
+      "sourceDomains": [
+        "eur-lex.europa.eu"
+      ],
+      "prohibitedInferences": [
+        "A transfer involving a self-hosted wallet is inherently illicit.",
+        "Absence of Travel Rule data proves suspicious activity without contextual review.",
+        "On-chain address labels or heuristics alone satisfy Travel Rule information requirements.",
+        "Travel Rule compliance alone implies low AML risk."
+      ],
+      "interpretationBoundary": {
+        "doesNotProvideLegalAdvice": true,
+        "requiresHumanValidation": true,
+        "prohibitedInferences": [
+          "A transfer involving a self-hosted wallet is inherently illicit.",
+          "Absence of Travel Rule data proves suspicious activity without contextual review.",
+          "On-chain address labels or heuristics alone satisfy Travel Rule information requirements.",
+          "Travel Rule compliance alone implies low AML risk."
+        ]
+      },
+      "authorityTier": "T0_PRIMARY_LAW",
+      "authorityTierDetail": {
+        "level": 1,
+        "meaning": "Derived directly from EU primary law sources (EUR-Lex/ec.europa.eu/commission.europa.eu).",
+        "allowedAgentUsage": [
+          "terminology_alignment",
+          "policy_explanation",
+          "report_drafting"
+        ],
+        "forbiddenAgentUsage": [
+          "compliance_decision",
+          "customer_risk_scoring",
+          "regulatory_conclusion"
+        ]
+      },
+      "authorityBasis": {
+        "tierDrivers": [
+          "eur-lex.europa.eu"
+        ],
+        "referenceCountByTier": {
+          "T0_PRIMARY_LAW": 3,
+          "T1_SUPERVISORY_GUIDANCE": 0,
+          "T2_INDUSTRY_STANDARD": 0,
+          "T3_OPERATIONAL_INTERPRETATION": 0
+        }
+      },
+      "whyItMattersSummary": "Role and scope errors cause regulatory and control failures. If teams treat blockchain visibility as equivalent to Travel Rule data, counterparty information quality and audit traceability degrade quickly.",
+      "failureModeSummary": "Transfers are processed without defensible applicability determination, required counterparty data is incomplete or non-auditable, and exception handling is inconsistent across self-hosted and CASP-linked flows.",
+      "scopeNonClaimsSummary": "This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for EU Travel Rule applicability and counterparty information handling.",
+      "source": {
+        "contentPath": "content/regulatory-context/travel-rule-applicability-counterparty-information-eu.mdx"
+      },
+      "contentHash": "sha256:2a5fdd19254e3e39138c2b6d68878c55020c5d7042538cc83cb00074ed7c5ca7"
+    }
+  ]
+}

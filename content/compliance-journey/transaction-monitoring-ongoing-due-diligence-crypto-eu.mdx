@@ -1,0 +1,67 @@
+---
+type: journey
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - FATF
+  - MiCA
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - A single alert or anomaly constitutes proof of money laundering or terrorist financing.
+  - Automated monitoring outputs alone mandate SAR/STR filing without human assessment.
+  - Stable historical behaviour eliminates the need for future monitoring.
+  - Use of specific crypto tools or services automatically implies illicit intent.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Crypto-related transaction monitoring and ongoing due diligence MUST be continuous, risk-based, and proportionate to the customer, portfolio, and activity profile rather than event-only or onboarding-limited.
+
+## Definition
+
+Within this framework, ongoing due diligence for crypto activity means periodic and trigger-based reassessment of exposure, behavioural patterns, counterparties, and service usage across on-chain and relevant off-chain contexts, with documented monitoring logic and human-reviewed outcomes.
+
+## Why It Matters
+
+Crypto exposure evolves quickly. Event-limited controls miss behavioural shifts and emerging patterns, while continuous monitoring supports timely escalation and defensible decisions.
+
+## Failure Mode if Ignored
+
+Monitoring becomes episodic and non-reproducible, alerts cannot be tied to defined scenarios, and ODD actions are inconsistently documented, creating audit and supervisory weaknesses.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for crypto transaction monitoring and ongoing due diligence.
+
+This entry does not provide legal advice, does not replace legal determination, and requires human validation for final compliance outcomes.
+
+## Related Concepts
+
+- [Regulatory scope of crypto compliance (EU) (regulatory-context)](/framework/regulatory-context/regulatory-scope-crypto-compliance-eu)
+- [Wallets and portfolio-level assessment (EU) (model)](/framework/analysis-models/wallets-portfolio-level-assessment-eu)
+- [Source of funds vs source of wealth (crypto) (EU) (definition)](/framework/definitions/source-of-funds-vs-source-of-wealth-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [MiCA — Regulation (EU) 2023/1114](https://eur-lex.europa.eu/eli/reg/2023/1114/oj)
+- [FATF Recommendations — Recommendation 10 and Interpretive Note](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

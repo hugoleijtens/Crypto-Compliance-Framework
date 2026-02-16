@@ -1,0 +1,67 @@
+---
+type: regulatory-context
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+regimes:
+  - AMLR
+  - MiCA
+  - TFR
+referencePolicy: EU_ONLY
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: regulatory_determination
+prohibitedInferences:
+  - Self-hosted wallet usage proves illicit intent or activity.
+  - Address reuse or behavioural patterns alone establish beneficial ownership.
+  - On-chain transaction history alone satisfies ownership/control evidence requirements.
+  - A single proof-of-control event implies ongoing exclusive control over time.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Self-hosted wallet interactions MUST be handled with explicit risk-based controls and evidence requirements that distinguish ownership or control evidence from on-chain activity observations.
+
+## Definition
+
+Within this framework, self-hosted wallet handling is a documented control process for determining applicability, evidence depth, and residual risk for transfers involving non-custodial addresses, with ownership/control evidence evaluated separately from transactional visibility.
+
+## Why It Matters
+
+Self-hosted wallet flows increase evidence complexity. Without explicit controls, institutions can over-infer ownership from activity traces or under-document risk rationale in high-impact decisions.
+
+## Failure Mode if Ignored
+
+Handling becomes ad hoc, ownership/control assumptions are made without acceptable evidence, and evidence gaps are not tracked with residual risk, weakening audit and supervisory defensibility.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for self-hosted wallet control and evidence handling in EU contexts.
+
+This entry does not provide legal advice, does not establish legal ownership in itself, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Travel Rule applicability and counterparty information (EU) (regulatory-context)](/framework/regulatory-context/travel-rule-applicability-counterparty-information-eu)
+- [Wallets and portfolio-level assessment (EU) (model)](/framework/analysis-models/wallets-portfolio-level-assessment-eu)
+- [Source of funds vs source of wealth (crypto) (EU) (definition)](/framework/definitions/source-of-funds-vs-source-of-wealth-crypto-eu)
+
+## Sources
+
+- [TFR — Regulation (EU) 2023/1113](https://eur-lex.europa.eu/eli/reg/2023/1113/oj)
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [MiCA — Regulation (EU) 2023/1114](https://eur-lex.europa.eu/eli/reg/2023/1114/oj)
+

@@ -1,0 +1,67 @@
+---
+type: regulatory-context
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - FATF
+  - MiCA
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: regulatory_determination
+prohibitedInferences:
+  - CASP authorisation does not imply low AML risk.
+  - Absence of CASP authorisation does not imply illegality or criminal intent.
+  - FATF VASP categorisation cannot be used alone to determine EU regulatory obligations.
+  - A single licence claim cannot be extrapolated to all services, entities, or jurisdictions.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+The determination of whether an entity qualifies as a Crypto-Asset Service Provider (CASP) under EU law MUST be assessed per activity and per jurisdiction.
+
+## Definition
+
+Within this framework, CASP/VASP perimeter assessment means verifying which specific services are regulated under MiCA for a given entity, in a specific jurisdiction, and separating that determination from AML/CFT obligations that can still apply independently where crypto-derived value intersects with the regulated financial system.
+
+## Why It Matters
+
+Perimeter mistakes create control design errors. If teams infer authorisation status from branding, interface design, or partial licensing claims, they can over-trust counterparties, under-scope AML controls, and produce non-defensible regulatory narratives.
+
+## Failure Mode if Ignored
+
+CASP/VASP labels are treated as broad risk conclusions rather than scoped legal classifications. This results in weak counterparty classification, inconsistent CDD depth, and unreliable decisions on travel-rule and ongoing due-diligence applicability.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for EU perimeter assessment.
+
+This entry does not provide legal advice, does not replace legal qualification, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Regulatory scope of crypto compliance (EU) (regulatory-context)](/framework/regulatory-context/regulatory-scope-crypto-compliance-eu)
+- [Wallets and portfolio-level assessment (EU) (model)](/framework/analysis-models/wallets-portfolio-level-assessment-eu)
+- [Transaction monitoring and ongoing due diligence (crypto) (EU) (journey)](/framework/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu)
+
+## Sources
+
+- [MiCA — Regulation (EU) 2023/1114](https://eur-lex.europa.eu/eli/reg/2023/1114/oj)
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [FATF Recommendations — Recommendation 15 and Interpretive Note](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

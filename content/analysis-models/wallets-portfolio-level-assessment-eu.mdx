@@ -1,0 +1,67 @@
+---
+type: model
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - FATF
+  - MiCA
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: aggregation_risk
+prohibitedInferences:
+  - Aggregation of wallets establishes legal ownership or control.
+  - Higher aggregate volume or velocity alone implies illicit activity.
+  - Portfolio size alone determines customer or counterparty risk.
+  - Shared infrastructure or tooling proves common beneficial ownership.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Crypto risk assessment MUST be performed at portfolio level rather than on isolated wallets where multiple wallets collectively represent economic exposure, control indicators, or coordinated transactional behaviour.
+
+## Definition
+
+Within this framework, portfolio-level wallet assessment is the aggregation of related wallet and service activity using documented criteria (behavioural, temporal, and transactional) to evaluate risk holistically while preserving traceability to wallet-level evidence.
+
+## Why It Matters
+
+Single-wallet analysis misses distributed behaviour. In regulated environments, risk often emerges through patterns across wallets and services over time, not through isolated address snapshots.
+
+## Failure Mode if Ignored
+
+Risk conclusions are fragmented and non-defensible, with over-reliance on single-wallet signals, weak exposure narratives, and aggregation decisions that cannot be reproduced during audit review.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for portfolio-level assessment of crypto exposure.
+
+This entry does not provide legal advice, does not establish legal ownership, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Regulatory scope of crypto compliance (EU) (regulatory-context)](/framework/regulatory-context/regulatory-scope-crypto-compliance-eu)
+- [CASP / VASP regulatory perimeter (EU) (regulatory-context)](/framework/regulatory-context/casp-vasp-regulatory-perimeter-eu)
+- [Transaction monitoring and ongoing due diligence (crypto) (EU) (journey)](/framework/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [MiCA — Regulation (EU) 2023/1114](https://eur-lex.europa.eu/eli/reg/2023/1114/oj)
+- [FATF Recommendations — Recommendation 1 and Interpretive Note](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

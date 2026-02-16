@@ -1,0 +1,44 @@
+{
+  "name": "crypto-compliance-framework",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npm run validate && npm run generate:machine && next build",
+    "start": "next start",
+    "lint": "next lint",
+    "typecheck": "tsc --noEmit",
+    "validate": "tsx scripts/validateContent.ts",
+    "generate:machine": "tsx scripts/generateMachineJson.ts",
+    "migrate:v1.3.0": "tsx scripts/migrateFrontmatterV130.ts",
+    "pipeline": "tsx scripts/runPipeline.ts"
+  },
+  "dependencies": {
+    "contentlayer2": "^0.5.8",
+    "gray-matter": "^4.0.3",
+    "next": "14.2.35",
+    "next-contentlayer2": "^0.5.8",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "remark-gfm": "^4.0.1",
+    "rss-parser": "^3.13.0",
+    "zod": "^3.24.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.16",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.13.0",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^8.57.1",
+    "eslint-config-next": "14.2.35",
+    "postcss": "^8.5.1",
+    "tailwindcss": "^3.4.17",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

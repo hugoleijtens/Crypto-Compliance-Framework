@@ -1,0 +1,67 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: illicitness_signals
+prohibitedInferences:
+  - Adverse media proves illicit activity.
+  - Online allegations mandate reporting without corroboration.
+  - OSINT-derived identity links establish beneficial ownership.
+  - Absence of adverse media implies low risk.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Adverse media and OSINT-derived signals MAY inform risk assessment and investigative prioritization but MUST be validated and contextualized; they are not conclusive proof.
+
+## Definition
+
+Within this framework, OSINT is evidence-adjacent input used to generate and prioritize hypotheses that require corroboration with primary records.
+
+## Why It Matters
+
+Unverified public claims are noisy and can introduce severe false positives if treated as determinations.
+
+## Failure Mode if Ignored
+
+Escalation and reporting decisions are made on unverified allegations, with weak defensibility and poor proportionality.
+
+## Scope & Non-Claims
+
+This entry is scoped to use of adverse media and OSINT in regulated banking environments in the EU/UK.
+
+This entry does not provide legal advice and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Counterparty risk assessment in crypto transactions (EU) (methodology)](/framework/methodology/counterparty-risk-assessment-crypto-eu)
+- [Case escalation and suspicion assessment (crypto) (EU) (journey)](/framework/compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu)
+- [Documentation and audit trail requirements for crypto compliance (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

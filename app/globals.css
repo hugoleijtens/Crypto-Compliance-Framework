@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --canvas: 40 30% 98%;
+  --canvas-2: 45 25% 96%;
+  --ink: 215 35% 12%;
+  --ink-subtle: 215 18% 35%;
+  --line: 215 22% 86%;
+  --accent: 195 65% 35%;
+  --accent-2: 195 55% 45%;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  color: hsl(var(--ink));
+  background:
+    radial-gradient(1200px 600px at 10% 0%, hsl(var(--accent) / 0.08), transparent 55%),
+    radial-gradient(900px 500px at 90% 10%, hsl(var(--accent-2) / 0.06), transparent 60%),
+    linear-gradient(180deg, hsl(var(--canvas)), hsl(var(--canvas-2)));
+}
+
+::selection {
+  background: hsl(var(--accent) / 0.18);
+}
+
+a {
+  color: hsl(var(--accent));
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: hsl(var(--accent-2));
+}

@@ -1,0 +1,67 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - Vendor labels prove entity identity, sanctions breach, or illicit activity.
+  - A single provider is sufficient for complete coverage.
+  - Absence of labels implies absence of risk.
+  - Vendor outputs alone mandate reporting or exit decisions.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Blockchain analytics and data providers MUST be governed as third-party dependencies with explicit limits on reliability, coverage, and label accuracy.
+
+## Definition
+
+Vendor-risk governance defines provenance capture, confidence handling, conflict resolution, and drift monitoring for third-party blockchain labels and analytics outputs.
+
+## Why It Matters
+
+Vendor outputs are evidence-adjacent signals; unmanaged reliance creates silent model and process risk.
+
+## Failure Mode if Ignored
+
+Labels are treated as truth, conflicts are unresolved, and high-impact decisions are made without corroboration.
+
+## Scope & Non-Claims
+
+This entry is scoped to third-party analytics governance in regulated banking environments in the EU/UK.
+
+This entry does not provide legal advice and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Counterparty risk assessment in crypto transactions (EU) (methodology)](/framework/methodology/counterparty-risk-assessment-crypto-eu)
+- [Sanctions exposure and screening in crypto contexts (EU) (methodology)](/framework/methodology/sanctions-exposure-screening-crypto-eu)
+- [Documentation and audit trail requirements for crypto compliance (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

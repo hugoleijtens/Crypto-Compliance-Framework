@@ -1,0 +1,64 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+referencePolicy: EU_ONLY
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: aggregation_risk
+prohibitedInferences:
+  - CSV/API exports are complete and authoritative by default.
+  - Absence of entries proves absence of activity.
+  - Exchange records alone establish SoW without corroboration where risk requires.
+  - Minor inconsistencies always imply wrongdoing.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Exchange exports are supporting evidence and MUST be evaluated for completeness, provenance, and consistency; they do not automatically constitute authoritative records in isolation.
+
+## Definition
+
+Within this framework, exchange records are evidentiary inputs that require provenance capture, completeness checks, and reconciliation against other records for high-impact compliance decisions.
+
+## Why It Matters
+
+Export artefacts are operationally useful but can be incomplete or inconsistent. Treating them as self-authenticating records creates false confidence.
+
+## Failure Mode if Ignored
+
+Unverified exports drive conclusions, key activity lines are missed, and unresolved inconsistencies are not governed through documented resolution.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for exchange-record evidence handling.
+
+This entry does not provide legal advice, does not treat exports as sufficient verification by default, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [On-chain vs off-chain evidence correlation (EU) (methodology)](/framework/methodology/evidence-correlation-onchain-offchain-eu)
+- [Source of funds vs source of wealth (crypto) (EU) (definition)](/framework/definitions/source-of-funds-vs-source-of-wealth-crypto-eu)
+- [Documentation and audit trail (crypto compliance) (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)

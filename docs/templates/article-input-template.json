@@ -1,0 +1,74 @@
+{
+  "id": "unique-slug-id",
+  "version": "1.0.0",
+  "status": "canonical",
+  "title": "Article title",
+  "entryIntent": "definition | principle | interpretation",
+  "jurisdictions": ["EU", "GLOBAL"],
+  "regimes": ["AMLR", "MiCA", "FATF"],
+  "referencePolicy": "EU_ONLY | GLOBAL_ONLY | EU_AND_GLOBAL",
+  "citationVerified": true,
+  "agentUsage": {
+    "allowed": ["terminology_alignment", "policy_explanation", "report_drafting"],
+    "forbidden": ["compliance_decision", "customer_risk_scoring", "regulatory_conclusion"]
+  },
+  "entryRiskClass": "definition_low_risk | regulatory_determination | attribution_ownership | illicitness_signals | decisioning | aggregation_risk",
+  "normativeStatement": {
+    "primaryRule": "One normative sentence.",
+    "clarification": "One scope clarification sentence."
+  },
+  "regulatoryReferences": [
+    {
+      "instrument": "MiCA | TFR | AMLR | AMLD6 | EU_DAC8 | FATF | OECD_CARF | EBA_GUIDANCE | ESMA_GUIDANCE",
+      "article": "Article / Recommendation",
+      "paragraph": "Optional paragraph or note",
+      "jurisdiction": "EU | UK | GLOBAL",
+      "url": "https://...",
+      "note": "Why this source is relevant"
+    }
+  ],
+  "operationalConstraints": [
+    "Constraint 1",
+    "Constraint 2"
+  ],
+  "permittedInferences": [
+    "Permitted inference 1",
+    "Permitted inference 2"
+  ],
+  "prohibitedInferences": [
+    "Prohibited inference 1",
+    "Prohibited inference 2"
+  ],
+  "evidenceRequirements": {
+    "mandatory": [
+      "Evidence item 1",
+      "Evidence item 2"
+    ],
+    "decisionDependencies": [
+      "dependency-slug-1",
+      "dependency-slug-2"
+    ]
+  },
+  "failureConditions": [
+    "Failure condition 1"
+  ],
+  "interpretationBoundary": {
+    "doesNotProvideLegalAdvice": true,
+    "requiresHumanValidation": true,
+    "prohibitedInferences": [
+      "Boundary inference 1",
+      "Boundary inference 2"
+    ]
+  },
+  "sourceOverride": {
+    "enabled": false,
+    "reason": "",
+    "approvedBy": "",
+    "approvedAt": null,
+    "expiresAt": null
+  },
+  "references": [
+    "https://...",
+    "https://..."
+  ]
+}

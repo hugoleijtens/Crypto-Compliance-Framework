@@ -1,0 +1,65 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: aggregation_risk
+prohibitedInferences:
+  - Pattern similarity proves money laundering or terrorist financing.
+  - Transaction complexity implies illicit purpose.
+  - High frequency alone constitutes suspicion.
+  - Scenario triggers mandate SAR/STR filing without human assessment.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Structuring and layering patterns are risk indicators that may increase ML/TF concern when supported by contextual evidence and purpose analysis; pattern recognition alone is insufficient for suspicion determinations.
+
+## Definition
+
+Within this framework, structuring/layering detection is a documented pattern process using explicit time windows and behavioural conditions to produce reviewable indicators rather than determinations.
+
+## Why It Matters
+
+Pattern tools can over-trigger if unconstrained. Explicit definitions and context checks are required to separate investigative value from false certainty.
+
+## Failure Mode if Ignored
+
+Pattern triggers are treated as conclusions, corroborating and exculpatory evidence is ignored, and escalation decisions lose proportionality and traceability.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for structuring/layering indicators in crypto activity.
+
+This entry does not provide legal advice, does not establish confirmed suspicion, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Crypto red flags and typologies in monitoring (EU) (methodology)](/framework/methodology/crypto-red-flags-typologies-monitoring-eu)
+- [Transaction monitoring and ongoing due diligence (crypto) (EU) (journey)](/framework/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu)
+- [Risk scoring and calibration (crypto) (EU) (methodology)](/framework/methodology/risk-scoring-calibration-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [FATF Typologies and Risk Indicators](https://www.fatf-gafi.org/en/publications/Typologies.html)

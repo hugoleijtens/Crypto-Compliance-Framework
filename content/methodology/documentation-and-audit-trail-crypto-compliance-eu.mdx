@@ -1,0 +1,64 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+referencePolicy: EU_ONLY
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - A final outcome alone is sufficient without evidence provenance.
+  - Lack of recorded issues implies lack of risk.
+  - Auditability is optional for crypto-related decisions.
+  - Documentation can be reconstructed later without loss.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Crypto compliance outcomes MUST be supported by an auditable trail that records evidence provenance, analytical steps, decisions, and residual risk, enabling independent review.
+
+## Definition
+
+Within this framework, an audit trail is the structured record of evidence sources, transformations, assumptions, decision rationale, and approvals needed to reconstruct compliance outcomes.
+
+## Why It Matters
+
+Without traceability, decisions cannot be defended. Auditability is a core control property, not an optional documentation step.
+
+## Failure Mode if Ignored
+
+Evidence provenance is lost, assumptions remain implicit, and decision outcomes cannot be reconstructed under audit or supervisory scrutiny.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for audit-trail requirements in crypto compliance.
+
+This entry does not provide legal advice and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Exchange records as evidence (crypto) (EU) (methodology)](/framework/methodology/exchange-records-as-evidence-crypto-eu)
+- [On-chain vs off-chain evidence correlation (EU) (methodology)](/framework/methodology/evidence-correlation-onchain-offchain-eu)
+- [Case escalation and suspicion assessment (crypto) (EU) (journey)](/framework/compliance-journey/case-escalation-and-suspicion-assessment-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)

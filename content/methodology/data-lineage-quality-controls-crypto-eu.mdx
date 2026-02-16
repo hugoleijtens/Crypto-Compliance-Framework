@@ -1,0 +1,67 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: aggregation_risk
+prohibitedInferences:
+  - A clean output implies clean data without lineage checks.
+  - Data completeness can be assumed from a single provider export.
+  - Aggregation metrics alone prove legitimacy or illicitness.
+  - Missing fields automatically imply suspicious activity.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Crypto compliance outcomes MUST be supported by data lineage and data quality controls that allow reconstruction of inputs, transformations, and outputs across on-chain and off-chain sources.
+
+## Definition
+
+Data lineage in this framework is the traceable chain from source records through normalization, reconciliation, and aggregation to final compliance outputs, with versioned transformations and quality checks.
+
+## Why It Matters
+
+Without lineage, portfolio aggregation, scoring, and suspicion assessments are not auditable or reproducible.
+
+## Failure Mode if Ignored
+
+Outputs cannot be traced to inputs, transformation logic becomes opaque, and unresolved data quality issues contaminate downstream decisions.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational data-governance controls for crypto compliance.
+
+This entry does not provide legal advice and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [On-chain vs off-chain evidence correlation (EU) (methodology)](/framework/methodology/evidence-correlation-onchain-offchain-eu)
+- [Documentation and audit trail requirements for crypto compliance (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+- [Risk scoring and calibration (crypto) (EU) (methodology)](/framework/methodology/risk-scoring-calibration-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

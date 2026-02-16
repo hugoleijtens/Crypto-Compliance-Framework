@@ -1,0 +1,65 @@
+---
+type: model
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: aggregation_risk
+prohibitedInferences:
+  - DeFi participation implies illicit activity.
+  - Portfolio complexity alone implies money laundering.
+  - A single snapshot of positions is sufficient for SoW conclusions.
+  - Yield estimates without documented assumptions constitute verified income.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+DeFi-related positions and yield MUST be assessed as part of portfolio-level exposure and income patterns, using verifiable evidence and explainable aggregation over time.
+
+## Definition
+
+Within this framework, DeFi assessment is a time-based interpretation of protocol events, position states, and valuation assumptions that distinguishes principal, yield, and realized outcomes where evidence supports it.
+
+## Why It Matters
+
+Snapshot-only views miss income dynamics and can misstate wealth narratives. Time-windowed evidence and explicit assumptions are required for defensible outcomes.
+
+## Failure Mode if Ignored
+
+Complexity is over-interpreted, valuation assumptions remain implicit, and conclusions cannot be traced to underlying events.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for DeFi exposure and yield assessment.
+
+This entry does not provide legal advice, does not treat estimates as verified income by default, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Wallets and portfolio-level assessment (EU) (model)](/framework/analysis-models/wallets-portfolio-level-assessment-eu)
+- [On-chain vs off-chain evidence correlation (EU) (methodology)](/framework/methodology/evidence-correlation-onchain-offchain-eu)
+- [Source of funds vs source of wealth (crypto) (EU) (definition)](/framework/definitions/source-of-funds-vs-source-of-wealth-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [FATF Recommendations — Recommendation 1 and Interpretive Note](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

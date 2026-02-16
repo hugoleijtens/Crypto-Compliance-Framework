@@ -1,0 +1,64 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+regimes:
+  - AMLR
+  - TFR
+referencePolicy: EU_ONLY
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: attribution_ownership
+prohibitedInferences:
+  - A signed message proves legal ownership or beneficial ownership.
+  - A one-time proof implies continuous control over time.
+  - A proof implies exclusive control unless evidenced separately.
+  - Failure to prove control is evidence of illicit activity.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Proof-of-wallet-control methods may evidence access to a private key at a point in time, but do not establish legal ownership, beneficial ownership, or ongoing control.
+
+## Definition
+
+Within this framework, proof-of-control is a time-scoped and method-scoped evidentiary artefact (for example signature or verification transfer) used to support narrow control assertions under documented policy constraints.
+
+## Why It Matters
+
+Control evidence is often over-interpreted. Without strict scope boundaries, institutions convert technical proofs into legal conclusions they do not support.
+
+## Failure Mode if Ignored
+
+One-off control artefacts are reused as ownership determinations, fraud and delegation risks are ignored, and control statements exceed evidentiary validity.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation of proof-of-control artefacts.
+
+This entry does not provide legal advice, does not establish beneficial ownership, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Beneficial ownership and control in crypto contexts (EU) (definition)](/framework/definitions/beneficial-ownership-and-control-crypto-eu)
+- [Self-hosted wallet risk controls (EU) (regulatory-context)](/framework/regulatory-context/self-hosted-wallet-risk-controls-eu)
+- [Travel Rule applicability and counterparty information (EU) (regulatory-context)](/framework/regulatory-context/travel-rule-applicability-counterparty-information-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [TFR — Regulation (EU) 2023/1113](https://eur-lex.europa.eu/eli/reg/2023/1113/oj)

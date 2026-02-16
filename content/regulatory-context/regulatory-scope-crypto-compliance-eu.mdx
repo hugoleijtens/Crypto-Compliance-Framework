@@ -1,0 +1,65 @@
+---
+type: regulatory-context
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+regimes:
+  - AMLR
+  - MiCA
+  - TFR
+referencePolicy: EU_ONLY
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: regulatory_determination
+prohibitedInferences:
+  - The absence of direct crypto services does not imply absence of crypto compliance obligations.
+  - Product or marketing labels cannot be used to exclude AML scope.
+  - MiCA authorisation status cannot be used in isolation to infer AML risk levels.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Crypto compliance obligations apply whenever crypto-derived value intersects with the regulated financial system, irrespective of whether the institution offers crypto products or services.
+
+## Definition
+
+For EU AML/CFT scope determination in regulated banking environments, crypto-derived value includes proceeds, conversions, or transfers originating from crypto-assets as defined under MiCA, and scope must be determined by value exposure rather than product labels.
+
+## Why It Matters
+
+Scope errors at intake create downstream control gaps. If institutions treat crypto exposure as out of scope based on product taxonomy alone, AML/CFT controls can be misapplied even when crypto-originated fiat inflows are present.
+
+## Failure Mode if Ignored
+
+Controls are excluded based on labels instead of exposure, resulting in undocumented scope assumptions, incomplete control mapping, and weak audit defensibility when crypto-related flows enter regulated channels.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for AML/CFT scope determination in EU contexts.
+
+This entry is not legal advice, does not replace legal interpretation, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [CASP / VASP regulatory perimeter (EU) (regulatory-context)](/framework/regulatory-context/casp-vasp-regulatory-perimeter-eu)
+- [Source of funds vs source of wealth (crypto) (EU) (definition)](/framework/definitions/source-of-funds-vs-source-of-wealth-crypto-eu)
+- [Transaction monitoring and ongoing due diligence (crypto) (EU) (journey)](/framework/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [MiCA — Regulation (EU) 2023/1114](https://eur-lex.europa.eu/eli/reg/2023/1114/oj)
+- [TFR — Regulation (EU) 2023/1113](https://eur-lex.europa.eu/eli/reg/2023/1113/oj)

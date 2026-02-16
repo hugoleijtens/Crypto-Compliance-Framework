@@ -1,0 +1,67 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+  - GLOBAL
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+referencePolicy: EU_AND_GLOBAL
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - Unknown counterparty equals illicit activity.
+  - Known or regulated counterparty equals low AML risk.
+  - A single label proves entity identity or regulatory status.
+  - Counterparty classification alone mandates SAR/STR filing or exit.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Counterparty risk MUST be assessed using role, service type, jurisdiction, and observed behaviour, supported by provenance-tagged evidence and governance controls.
+
+## Definition
+
+Within this framework, counterparty risk assessment is a repeatable classification and review process that combines verified status data, behavioural evidence, and jurisdiction context to determine proportionate controls.
+
+## Why It Matters
+
+Counterparty labels drift and can be wrong. Decisions require provenance, verification, and time-bounded assumptions to remain defensible.
+
+## Failure Mode if Ignored
+
+Labels are treated as determinations, jurisdiction assumptions become stale, and applied controls cannot be traced to documented rationale.
+
+## Scope & Non-Claims
+
+This entry is scoped to regulated banking environments in the EU/UK and operational interpretation for counterparty risk assessment in crypto contexts.
+
+This entry does not provide legal advice, does not establish legal status by label alone, and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [CASP / VASP regulatory perimeter (EU) (regulatory-context)](/framework/regulatory-context/casp-vasp-regulatory-perimeter-eu)
+- [Travel Rule applicability and counterparty information (EU) (regulatory-context)](/framework/regulatory-context/travel-rule-applicability-counterparty-information-eu)
+- [Transaction monitoring and ongoing due diligence (crypto) (EU) (journey)](/framework/compliance-journey/transaction-monitoring-ongoing-due-diligence-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj)
+- [EBA Guidelines on ML/TF Risk Factors](https://www.eba.europa.eu/regulation-and-policy/anti-money-laundering-and-countering-financing-terrorism/guidelines-mltf-risk-factors)
+- [FATF Recommendations — Recommendation 1 and Interpretive Note](https://www.fatf-gafi.org/en/publications/Fatfrecommendations/Fatf-recommendations.html)

@@ -1,0 +1,64 @@
+---
+type: methodology
+status: published
+entryIntent: interpretation
+confidence: high
+scope: Regulated banking environments in EU/UK
+risk: medium
+jurisdictions:
+  - EU
+regimes:
+  - AMLR
+  - TFR
+referencePolicy: EU_ONLY
+citationVerified: true
+agentUsage:
+  allowed:
+    - terminology_alignment
+    - policy_explanation
+    - report_drafting
+  forbidden:
+    - compliance_decision
+    - customer_risk_scoring
+    - regulatory_conclusion
+entryRiskClass: decisioning
+prohibitedInferences:
+  - More data is always better for compliance.
+  - Raw data accumulation guarantees auditability.
+  - Retention policies can be informal or undocumented.
+  - Deletion implies wrongdoing or concealment.
+lastReviewed: '2026-02-14'
+---
+
+## Canonical Statement
+
+Crypto compliance evidence retention MUST balance auditability with privacy and data minimization, retaining only what is necessary to support decisions and obligations.
+
+## Definition
+
+This control defines purpose-based retention, access control, lifecycle enforcement, and deletion logging for crypto compliance evidence.
+
+## Why It Matters
+
+Unbounded retention increases exposure and governance risk; weak retention breaks auditability.
+
+## Failure Mode if Ignored
+
+Sensitive data accumulates without purpose mapping, retention schedules are unenforced, and evidence handling becomes non-defensible.
+
+## Scope & Non-Claims
+
+This entry is scoped to record-retention and privacy governance in regulated banking environments in the EU/UK.
+
+This entry does not provide legal advice and requires human validation for final compliance determinations.
+
+## Related Concepts
+
+- [Documentation and audit trail requirements for crypto compliance (EU) (methodology)](/framework/methodology/documentation-and-audit-trail-crypto-compliance-eu)
+- [Travel Rule applicability and counterparty information (EU) (regulatory-context)](/framework/regulatory-context/travel-rule-applicability-counterparty-information-eu)
+- [Data lineage and data quality controls for crypto compliance (EU) (methodology)](/framework/methodology/data-lineage-quality-controls-crypto-eu)
+
+## Sources
+
+- [AMLR — Regulation (EU) 2024/1624](https://eur-lex.europa.eu/eli/reg/2024/1624/oj/eng)
+- [TFR — Regulation (EU) 2023/1113](https://eur-lex.europa.eu/eli/reg/2023/1113/oj/eng)
