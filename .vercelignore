@@ -1,0 +1,57 @@
+# Dependencies
+node_modules
+
+# Testing
+coverage
+*.test.ts
+*.test.tsx
+*.spec.ts
+*.spec.tsx
+
+# Build artifacts
+.next
+out
+.contentlayer
+
+# Development
+.env.local
+.env*.local
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor
+.vscode
+.idea
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Temporary files
+tmp
+temp
+*.tmp
+
+# Git
+.git
+.gitignore
+
+# Documentation (for build optimization, docs are still in repo)
+docs/drafts
+docs/archive
+
+# Signals and triage (not needed for production)
+signals
+triage
+audit/*.log
+
+# Scripts (pipeline scripts not needed in production)
+scripts/runPipeline.ts
+scripts/migrateFrontmatterV130.ts
