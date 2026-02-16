@@ -2,6 +2,8 @@
 
 A production-oriented, deterministic knowledge site and content pipeline for crypto compliance framework entries.
 
+**🚀 Ready to Deploy?** See [HOW_TO_DEPLOY.md](./HOW_TO_DEPLOY.md) for quick deployment instructions.
+
 ## Goals
 
 - Publish a canonical handbook-style website (Next.js 14, App Router)
@@ -218,10 +220,22 @@ npm run dev
 
 ## Deployment
 
-This is a standard Next.js 14 app.
+This is a standard Next.js 14 app, deployed to Vercel.
+
+### Quick Start
+
+The application is configured for automatic deployment to Vercel via GitHub integration. See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed instructions.
+
+### Local Development
 
 - Build: `npm run build`
 - Run: `npm run start`
 - Governance page: `/governance`
+
+### Vercel Setup
+
+1. Connect your GitHub repository to Vercel
+2. Configure environment variables (see [DEPLOYMENT.md](./DEPLOYMENT.md))
+3. Deploy automatically on push to `main` branch
 
 If you want a fully static deployment, generate the machine-interface JSON into `public/` (already done by `generate:machine`) and configure your hosting to serve the built output appropriately.
