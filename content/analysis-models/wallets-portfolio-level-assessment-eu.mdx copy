@@ -1,0 +1,79 @@
+---
+id: wallets-portfolio-level-assessment-eu
+title: Wallets Portfolio‑Level Assessment
+jurisdiction: EU
+regimes:
+  - AMLR
+  - MiCA
+  - FATF
+authority_level: hard_law
+risk_domain:
+  - monitoring
+  - reporting
+confidence_level: high
+version: 1.1.0
+last_reviewed: 2026-02-16
+---
+
+## Legal & Regulatory Anchors
+
+| Instrument | Artikel | Binding | Jurisdictie | Toelichting |
+| --- | --- | --- | --- | --- |
+| AMLR Regulation (EU) 2024/1624 | Art. 25 & 33 | Hard law | EU | Requires risk assessments to consider the entirety of a customer’s relationship and activities, not isolated transactions |
+| Markets in Crypto‑Assets Regulation (MiCA) (EU) 2023/1114 | Recital 56 | Hard law | Emphasizes the need for comprehensive risk management covering all crypto‑asset activities provided to a client |
+| FATF Recommendation 10 & 15 | Rec. 10 & 15 | Guidance | Global | Advises that customer due diligence and ongoing monitoring should consider the overall transaction patterns and exposure across multiple wallets and services |
+
+## Normative Statement
+
+Compliance risk assessments for crypto customers **MUST** be performed at the portfolio level, aggregating all on‑ and off‑chain wallets and accounts associated with the customer. Institutions **MUST NOT** evaluate wallets in isolation or assume that risk is confined to individual addresses; instead, they **SHOULD** assess consolidated exposure, behavioural patterns and counterparty relationships.
+
+## Operational Layer
+
+* Establish processes to link customer‑controlled wallets and accounts through KYC identifiers, proof‑of‑control evidence and transaction analysis.
+* Aggregate balances, inflows, outflows, positions in DeFi protocols and exchange accounts to determine overall exposure and risk concentration.
+* Use portfolio‑level metrics (e.g., total value at risk, cumulative transaction volume, concentration of counterparties) to inform risk scoring and monitoring thresholds.
+* Review portfolio composition periodically and upon significant changes (e.g., new asset types, large transfers) and refresh supporting documentation as needed.
+
+## Decision Logic
+
+1. **If** aggregated exposure across a customer’s wallets exceeds predefined risk thresholds or reveals high‑risk patterns **→** initiate enhanced due diligence and adjust monitoring frequency.
+2. **If** individual wallets appear low risk but aggregated data shows concentration with high‑risk counterparties **→** treat the overall portfolio as elevated risk and document justification.
+3. **If** portfolio linking is inconclusive due to missing evidence **→** request additional proof of control or deny further services until the customer’s total exposure can be adequately assessed.
+
+## Operational Controls
+
+**Control objective:** Ensure that risk assessments reflect the entirety of a customer’s crypto activities rather than isolated wallets or transactions.
+
+**Control description:** The control requires building and maintaining a portfolio view that consolidates all known wallets and crypto accounts per customer. Monitoring rules and risk scoring models operate on the consolidated data. Exceptions (e.g., unlinked wallets) are tracked and resolved through additional verification.
+
+**Control owner:** Risk management and analytics teams within compliance.
+
+**Review frequency:** Portfolio linkage and exposure analysis should occur at onboarding and quarterly thereafter, with more frequent reviews for high‑risk customers.
+
+**Dependencies:** Accurate KYC information, reliable proof‑of‑control processes, blockchain analytics and integration with external exchanges or custodians.
+
+## Evidence & Audit Artifacts
+
+* Portfolio linkage reports detailing addresses/accounts associated with each customer and the evidence used to establish the linkage.
+* Risk assessment documentation demonstrating how aggregated exposure influenced risk scoring and monitoring decisions.
+* Audit logs of changes to portfolio composition and follow‑up actions taken.
+* Correspondence with customers providing proof of control or explanations for unlinked wallets.
+
+## Edge Cases
+
+1. Customers using complex DeFi strategies (e.g., flash loans, cross‑chain arbitrage) may generate short‑lived wallets that are difficult to link; additional heuristics and customer disclosures are required.
+2. Shared custodial addresses on exchanges can obscure individual exposure; the institution must obtain sub‑account information or rely on third‑party attestations.
+3. High‑net‑worth individuals with multiple legal entities may control portfolios across subsidiaries; compliance must decide whether to aggregate exposure at the beneficial owner level or per entity based on risk policies.
+
+## Anti‑Patterns
+
+1. Assessing risk solely on the basis of individual wallet activity and ignoring aggregated exposure, leading to underestimation of overall risk.
+2. Assuming that unlinked or newly discovered wallets are irrelevant to the customer’s risk profile without attempting to establish control or ownership.
+
+## AI Usage Constraints
+
+AI systems may assist in clustering wallets and calculating portfolio metrics, but human oversight is required to verify linkage and interpret results. AI should not automatically exclude wallets from a portfolio or override analyst judgement regarding exposure assessment.
+
+## Review & Governance
+
+This entry will be reviewed by Compliance and Legal annually or when significant regulatory updates occur. Changes to portfolio assessment methodology must be documented with version updates and a clear changelog.

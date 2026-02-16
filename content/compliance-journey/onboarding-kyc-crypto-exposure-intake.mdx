@@ -1,0 +1,78 @@
+---
+id: onboarding-kyc-crypto-exposure-intake
+title: Onboarding KYC for Crypto Exposure Intake
+jurisdiction: EU
+regimes:
+  - AMLR
+  - MiCA
+  - FATF
+authority_level: hard_law
+risk_domain:
+  - onboarding
+confidence_level: high
+version: 1.1.0
+last_reviewed: 2026-02-16
+---
+
+## Legal & Regulatory Anchors
+
+| Instrument | Artikel | Binding | Jurisdictie | Toelichting |
+| --- | --- | --- | --- | --- |
+| AMLR Regulation (EU) 2024/1624 | Art. 15–18 | Hard law | EU | Requires customer due‑diligence and appropriate risk assessment at onboarding, including understanding the nature and purpose of the business relationship |
+| MiCA Regulation (EU) 2023/1114 | Art. 63 | Hard law | Requires CASPs to collect information necessary to understand clients’ crypto activities and exposures |
+| FATF Recommendation 10 | Rec. 10 | Guidance | Global | Calls for obtaining information on customers’ activities and the purpose of the relationship to inform risk assessments |
+
+## Normative Statement
+
+Crypto‑asset exposure **MUST** be explicitly captured during onboarding through structured intake processes. Institutions **MUST** gather information about the customer’s crypto activities (e.g., types of assets, platforms used, self‑hosted wallets) and **MUST** periodically refresh this information to maintain an up‑to‑date assessment. Failing to collect this data **MUST NOT** be considered an option.
+
+## Operational Layer
+
+* Design onboarding questionnaires that specifically inquire about customers’ current and intended crypto activities, types of crypto assets held, exposure size and the platforms or wallets used.
+* Require customers to provide proof of ownership/control for declared wallets and documentation of activities (e.g., exchange statements, DeFi participation records).
+* Integrate collected data into the customer risk profile and use it to calibrate monitoring thresholds and due‑diligence measures.
+* Establish processes to refresh crypto exposure data periodically (e.g., annually or upon triggering events) and whenever significant changes are detected via transaction monitoring.
+
+## Decision Logic
+
+1. **If** a customer discloses crypto activities and provides adequate evidence **→** integrate this information into the risk profile and determine appropriate monitoring levels.
+2. **If** a customer fails to disclose crypto exposure but monitoring reveals significant crypto transactions **→** flag the discrepancy, request additional information and consider escalation.
+3. **If** a customer refuses to provide crypto exposure information or evidence **→** suspend onboarding or restrict services until compliance requirements are met.
+
+## Operational Controls
+
+**Control objective:** Obtain sufficient information about customers’ crypto exposure to support accurate risk assessments and ongoing monitoring.
+
+**Control description:** Onboarding checklists include mandatory crypto exposure questions. Compliance systems cannot progress to approval without recorded responses. Exposure data is stored in a structured format and triggers periodic refresh tasks. Exceptions require senior compliance approval.
+
+**Control owner:** KYC onboarding team with oversight from compliance.
+
+**Review frequency:** At onboarding for all customers; exposure data refreshed annually or sooner if transaction patterns change significantly.
+
+**Dependencies:** Well‑designed questionnaires, training for onboarding staff, systems for secure storage of exposure data and integration with monitoring tools.
+
+## Evidence & Audit Artifacts
+
+* Completed onboarding questionnaires capturing crypto exposure details.
+* Proof‑of‑control evidence for declared wallets and accounts.
+* Records of exposure updates and periodic refresh assessments.
+* Logs of discrepancies identified and actions taken to resolve them.
+
+## Edge Cases
+
+1. Customers newly entering the crypto space may not yet have exposure; periodic follow‑up is needed to capture future activities.
+2. Institutional clients using third‑party custodians may have complex account structures; onboarding must map sub‑accounts and beneficial owners.
+3. DeFi or protocol participants may hold non‑standard assets (e.g., governance tokens, NFTs); questionnaires must adapt to evolving asset types.
+
+## Anti‑Patterns
+
+1. Allowing onboarding to proceed without capturing crypto exposure information because the customer states they do not engage in crypto; monitoring may later reveal unknown exposure.
+2. Treating initial exposure data as static and failing to refresh it, leading to outdated risk assessments.
+
+## AI Usage Constraints
+
+AI tools can assist in parsing customer‑provided information and detecting inconsistencies between disclosures and transaction monitoring, but cannot replace structured questionnaires or human review. AI suggestions must be verified before updating risk profiles.
+
+## Review & Governance
+
+Compliance and Legal must review this entry annually or when new regulatory requirements for onboarding crypto customers arise. Updates must be documented with version changes.

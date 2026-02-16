@@ -1,0 +1,78 @@
+---
+id: suspicious-transaction-reporting
+title: Suspicious Transaction Reporting
+jurisdiction: EU
+regimes:
+  - AMLR
+  - FATF
+  - EBA_GUIDANCE
+authority_level: hard_law
+risk_domain:
+  - reporting
+confidence_level: high
+version: 1.1.0
+last_reviewed: 2026-02-16
+---
+
+## Legal & Regulatory Anchors
+
+| Instrument | Artikel | Binding | Jurisdictie | Toelichting |
+| --- | --- | --- | --- | --- |
+| AMLR Regulation (EU) 2024/1624 | Art. 34–36 | Hard law | EU | Obliges obliged entities to report suspicious transactions to the Financial Intelligence Unit (FIU) without tipping off the customer |
+| FATF Recommendation 20 | Rec. 20 | Guidance | Global | Requires prompt reporting of suspicious transactions based on grounds for suspicion and prohibits disclosure to the customer |
+| EBA Guidelines on ML/TF Risk Factors | Sec. 4.4 | Supervisory | EU | Provides criteria for determining when a transaction should be considered suspicious and reported |
+
+## Normative Statement
+
+Decisions to file suspicious transaction reports (STRs) **MUST** be based on a documented suspicion assessment, corroborated evidence and human review. Institutions **MUST NOT** rely solely on automated alerts or risk scores to submit STRs. Each STR **MUST** record the rationale, evidence and analysis that led to the suspicion, ensuring that FIUs receive meaningful information to assist investigations.
+
+## Operational Layer
+
+* Establish a standardized suspicion assessment form capturing indicators (red flags), contextual information, customer history, and evidence collected (on‑chain and off‑chain).
+* When monitoring systems generate alerts, assign them to trained investigators who review the evidence, gather additional information and decide whether suspicion is met.
+* Require dual review or senior compliance approval before filing an STR to ensure the decision is warranted and well documented.
+* Submit STRs to the FIU via the prescribed channels, including all required details and supporting analysis. Maintain confidentiality and avoid tipping off the customer.
+
+## Decision Logic
+
+1. **If** the investigator concludes that the facts and evidence establish reasonable grounds for suspicion of money laundering, terrorist financing or other illicit activity **→** file an STR promptly with the FIU.
+2. **If** the evidence is inconclusive but indicators persist **→** continue monitoring, collect additional information and consider filing if further evidence supports suspicion.
+3. **If** the alert is deemed a false positive after investigation **→** document the rationale for dismissal and maintain records for audit purposes.
+
+## Operational Controls
+
+**Control objective:** Ensure that suspicious transactions are identified, assessed and reported appropriately, with sufficient evidence and documentation.
+
+**Control description:** A case management system supports the investigation process, requiring completion of suspicion assessment forms. Rules mandate dual review for high‑risk cases. The control ensures confidentiality and prohibits disclosure to customers. Regular training and quality assurance reviews reinforce consistent application of suspicion criteria.
+
+**Control owner:** Compliance investigations team and FIU reporting officer.
+
+**Review frequency:** Ongoing for each alert; quality assurance reviews monthly; policy reviewed annually.
+
+**Dependencies:** Effective monitoring and alerting tools, trained investigators, secure communication channels with the FIU and retention of supporting evidence.
+
+## Evidence & Audit Artifacts
+
+* Completed suspicion assessment forms and supporting evidence files for each STR and dismissed alert.
+* Records of dual review approvals and decisions to file or dismiss.
+* Copies of STRs submitted, with confirmation of receipt from the FIU.
+* Training logs and quality assurance reports evaluating the consistency and accuracy of STR filings.
+
+## Edge Cases
+
+1. Alerts triggered by regulatory requirements (e.g., travel‑rule failures) but lacking sufficient evidence of suspicious intent; investigators must decide whether to file or monitor.
+2. Transactions involving politically exposed persons or sanctioned jurisdictions may require immediate reporting even if evidence is still being gathered; legal consultation is advised.
+3. Repeated small transactions below reporting thresholds that collectively appear suspicious; investigators must aggregate evidence over time to determine if an STR is justified.
+
+## Anti‑Patterns
+
+1. Filing STRs automatically based on a risk score threshold without human review or consideration of context and evidence.
+2. Delaying STR submission until full certainty is obtained, potentially allowing illicit transactions to continue unreported.
+
+## AI Usage Constraints
+
+AI tools can assist in prioritizing alerts and identifying patterns, but the decision to file an STR must be made by trained investigators. AI cannot replace human judgement or interpret legal suspicion thresholds. Analysts must validate AI outputs and ensure evidence is sufficient before reporting.
+
+## Review & Governance
+
+This entry will be reviewed by Compliance and Legal at least annually, and whenever FIU guidance or regulatory changes occur. Revisions will be documented with version updates and an explanation of modifications.

@@ -1,0 +1,79 @@
+---
+id: documentation-and-audit-trail
+title: Documentation and Audit Trail
+jurisdiction: EU
+regimes:
+  - AMLR
+  - MiCA
+  - FATF
+authority_level: hard_law
+risk_domain:
+  - reporting
+  - governance
+confidence_level: high
+version: 1.1.0
+last_reviewed: 2026-02-16
+---
+
+## Legal & Regulatory Anchors
+
+| Instrument | Artikel | Binding | Jurisdictie | Toelichting |
+| --- | --- | --- | --- | --- |
+| AMLR Regulation (EU) 2024/1624 | Art. 32–34 & 38 | Hard law | EU | Requires retention of documentation demonstrating compliance with AML/CFT obligations and the ability to provide information to competent authorities |
+| MiCA Regulation (EU) 2023/1114 | Art. 84 & 85 | Hard law | Requires CASPs to implement governance arrangements ensuring records of decisions and compliance activities |
+| FATF Recommendation 11 & 12 | Rec. 11 & 12 | Guidance | Global | Mandates record‑keeping and documentation of customer due‑diligence measures for minimum periods and for politically exposed persons |
+
+## Normative Statement
+
+Compliance outcomes and decisions relating to crypto activities **MUST** be supported by an auditable trail recording evidence provenance, analysis steps, decisions taken and residual risk. Institutions **MUST** maintain comprehensive documentation that demonstrates how compliance judgments were reached and **MUST NOT** rely on undocumented oral reasoning. Audit trails **SHOULD** be accessible to auditors and regulators upon request.
+
+## Operational Layer
+
+* Implement a case management system that records all relevant information, including KYC documents, transaction data, analysis notes, decision rationales and communications, linked to each case or customer.
+* Ensure that each compliance decision (e.g., onboarding approval, risk classification, STR filing) is accompanied by documentation detailing the evidence considered and the reasoning for the decision.
+* Track residual risk and mitigation actions for each case, updating records as new information emerges or decisions are revisited.
+* Restrict access to audit trails to authorised personnel and implement controls to prevent tampering; maintain logs of access and changes.
+
+## Decision Logic
+
+1. **If** a compliance decision is made **→** record in the audit trail the decision, supporting evidence, analysis steps and approvals obtained.
+2. **If** evidence is incomplete or conflicting **→** document the gaps, actions taken to resolve them and the basis for proceeding or escalating.
+3. **If** a case is reopened due to new information or alerts **→** append the new evidence and reasoning to the existing audit trail, ensuring continuity.
+
+## Operational Controls
+
+**Control objective:** Create and maintain comprehensive, tamper‑evident documentation and audit trails for all compliance activities and decisions.
+
+**Control description:** Compliance uses electronic case management systems with built‑in audit trail functions. Policies require mandatory documentation of evidence, reasoning and approvals for each decision. Audit trail integrity is protected via access controls, encryption and immutable logs. Regular internal audits verify completeness and accuracy of documentation.
+
+**Control owner:** Compliance operations and IT security teams.
+
+**Review frequency:** Case documentation is reviewed in real time by managers; system controls are audited annually or in response to incidents.
+
+**Dependencies:** Case management software, secure storage and access control systems, staff training on documentation standards and clear procedural requirements.
+
+## Evidence & Audit Artifacts
+
+* Case files containing all relevant documents, analysis notes, decision records and residual risk assessments.
+* System logs showing creation, modification and access to audit trail entries.
+* Policies and procedures outlining documentation and audit trail requirements.
+* Internal audit reports assessing compliance with documentation standards.
+
+## Edge Cases
+
+1. System outages or migrations that risk loss of audit trail data; institutions must have contingency plans and backups to maintain records.
+2. Situations where sensitive intelligence cannot be fully documented; the audit trail should note the existence of restricted information and the basis for decisions without disclosing protected details.
+3. Use of third‑party case management platforms; the institution must ensure that audit trail requirements are met and data privacy is maintained.
+
+## Anti‑Patterns
+
+1. Making compliance decisions based on informal conversations or undocumented reasoning, leading to gaps that cannot be defended during audits or investigations.
+2. Allowing unauthorised edits or deletions of audit trail entries, undermining the integrity and reliability of records.
+
+## AI Usage Constraints
+
+AI may assist in summarizing case information or suggesting next steps, but all AI‑generated outputs must be recorded alongside human analysis and final decisions. AI cannot edit or erase audit trail records, and its use must be documented.
+
+## Review & Governance
+
+This entry will be reviewed by Compliance, Legal and Internal Audit annually. Updates will reflect technological improvements or regulatory changes in record‑keeping requirements. All revisions must include version history and explanatory notes.

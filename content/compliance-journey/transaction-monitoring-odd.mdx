@@ -1,0 +1,78 @@
+---
+id: transaction-monitoring-odd
+title: Transaction Monitoring & Ongoing Due Diligence
+jurisdiction: EU
+regimes:
+  - AMLR
+  - FATF
+  - EBA_GUIDANCE
+authority_level: hard_law
+risk_domain:
+  - monitoring
+confidence_level: high
+version: 1.1.0
+last_reviewed: 2026-02-16
+---
+
+## Legal & Regulatory Anchors
+
+| Instrument | Artikel | Binding | Jurisdictie | Toelichting |
+| --- | --- | --- | --- | --- |
+| AMLR Regulation (EU) 2024/1624 | Art. 33 | Hard law | EU | Mandates ongoing monitoring of business relationships and transactions based on customer risk profile |
+| FATF Recommendation 10 | Rec. 10 | Guidance | Global | Requires continuous due diligence and monitoring of transactions to ensure that activities are consistent with the institution’s knowledge of the customer |
+| EBA Guidelines on ML/TF Risk Factors | Sec. 4.4 & 5 | Supervisory | EU | Provides guidance on ongoing monitoring and triggers for review, emphasizing proportionality to risk |
+
+## Normative Statement
+
+Transaction monitoring and ongoing due diligence (ODD) **MUST** be continuous, risk‑based and proportionate to the customer’s profile, portfolio exposure and activity patterns. Institutions **MUST NOT** treat monitoring as a one‑off or solely event‑driven activity limited to onboarding. Monitoring frequency and intensity **SHOULD** adjust dynamically in response to risk indicators and changes in customer behaviour.
+
+## Operational Layer
+
+* Develop monitoring systems that analyse transactions in real time and in aggregate, leveraging risk scores, red flags, sanctions screening and behavioural patterns.
+* Define monitoring frequency and depth based on customer risk classification (e.g., daily monitoring for high risk, periodic sampling for low risk) and adjust when significant changes occur (e.g., sudden spike in activity, new products used).
+* Integrate ODD reviews into the compliance lifecycle, ensuring that customer profiles, risk assessments and documentation are refreshed regularly and whenever material information changes.
+* Document monitoring outcomes, including alerts raised, investigations conducted, actions taken and rationale for maintaining or adjusting risk levels.
+
+## Decision Logic
+
+1. **If** monitoring detects activity inconsistent with the customer’s profile or risk tolerance **→** initiate enhanced due‑diligence, gather additional evidence and adjust risk classification if warranted.
+2. **If** a customer’s activity pattern remains consistent with expectations and no new risk indicators arise **→** maintain current monitoring frequency and schedule the next ODD review as per policy.
+3. **If** new products, services or jurisdictions are used by the customer **→** reassess risk profile, update monitoring parameters and consider requiring additional disclosures or documentation.
+
+## Operational Controls
+
+**Control objective:** Ensure that monitoring and ODD processes are continuous, responsive to risk and integrated into overall compliance management.
+
+**Control description:** A risk‑based monitoring program assigns customers to monitoring tiers based on risk ratings. Transaction monitoring rules and machine‑learning models generate alerts for anomalous activity. ODD reviews are scheduled and tracked. Findings lead to updates in risk profiles and possible escalations. Controls require documentation of all monitoring actions and regular validation of monitoring effectiveness.
+
+**Control owner:** Transaction monitoring and customer due‑diligence teams.
+
+**Review frequency:** Monitoring occurs continuously; ODD reviews follow risk‑based schedules (e.g., annual for low risk, quarterly for high risk); overall monitoring framework reviewed annually.
+
+**Dependencies:** Monitoring technology, up‑to‑date customer profiles, risk scoring models, trained analysts and governance oversight.
+
+## Evidence & Audit Artifacts
+
+* Monitoring logs and alert reports, including details of anomalies detected and actions taken.
+* Risk assessment updates and ODD review reports documenting any changes in customer status.
+* Evidence files used to conduct investigations (e.g., on‑chain data, customer communications, external databases).
+* Performance metrics for monitoring systems (e.g., alert volumes, false positive rates) and validation reports.
+
+## Edge Cases
+
+1. Customers whose activity spans multiple jurisdictions and blockchains; monitoring systems must aggregate cross‑platform data to detect unusual patterns.
+2. Dormant accounts that suddenly show large volumes of activity; monitoring must quickly adapt risk level and trigger enhanced scrutiny.
+3. High‑volume, low‑margin traders who generate many transactions consistent with their business model; monitoring must differentiate between legitimate patterns and suspicious anomalies.
+
+## Anti‑Patterns
+
+1. Conducting transaction monitoring only at predefined intervals (e.g., quarterly) without adjusting to real‑time risk signals, leading to delayed detection of illicit activity.
+2. Treating onboarding due‑diligence as sufficient without ongoing updates, resulting in outdated risk assessments and controls.
+
+## AI Usage Constraints
+
+AI and machine‑learning models can enhance monitoring by detecting complex patterns and evolving risks, but their outputs must be reviewed by human analysts. AI models must be calibrated and validated regularly to avoid drift. Human oversight is required to interpret results and adjust monitoring parameters.
+
+## Review & Governance
+
+Compliance management and risk committees will review this entry annually or when new regulatory guidance on monitoring and ODD emerges. Revisions will include version updates and explanatory notes.

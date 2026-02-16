@@ -1,0 +1,79 @@
+---
+id: source-of-funds-vs-source-of-wealth
+title: Source of Funds vs. Source of Wealth
+jurisdiction: EU
+regimes:
+  - AMLR
+  - EBA_GUIDANCE
+  - FATF
+authority_level: guidance
+risk_domain:
+  - onboarding
+  - monitoring
+confidence_level: high
+version: 1.1.0
+last_reviewed: 2026-02-16
+---
+
+## Legal & Regulatory Anchors
+
+| Instrument | Artikel | Binding | Jurisdictie | Toelichting |
+| --- | --- | --- | --- | --- |
+| AMLR Regulation (EU) 2024/1624 | Art. 15–18 | Hard law | EU | Requires verification of both the source of funds and the source of wealth for certain high‑risk customers |
+| EBA Guidelines on ML/TF Risk Factors | Sec. 5 | Supervisory | EU | Differentiates between source of funds (SoF) and source of wealth (SoW) and provides guidance on evidence collection |
+| FATF Recommendation 10 & 12 | Rec. 10 & 12 | Guidance | Global | Sets expectations that institutions obtain information on the origin of funds and wealth, especially for politically exposed persons and high‑risk situations |
+
+## Normative Statement
+
+The **Source of Funds (SoF)**, which explains the origin of a specific transaction or transfer, and the **Source of Wealth (SoW)**, which explains how a customer accumulated their overall wealth, are **distinct determinations** and **MUST** be evaluated separately. Institutions **MUST NOT** conflate SoF evidence with SoW, and **SHOULD** obtain appropriate documentation for each when assessing crypto‑related customers.
+
+## Operational Layer
+
+* During onboarding and periodic reviews, request documentation evidencing the origin of funds used in each crypto transaction (e.g., payslips, sale contracts, mining rewards) and maintain records linking transactions to their SoF evidence.
+* For high‑risk customers or those with significant crypto holdings, collect documentation evidencing how their wealth was accumulated over time (e.g., business ownership records, investment portfolios, inheritance documentation).
+* Analyse the plausibility of declared SoF and SoW in the context of the customer’s profile, occupation and transaction behaviour.
+* Escalate discrepancies or unexplained wealth accumulation to compliance management and consider enhanced due‑diligence or reporting obligations.
+
+## Decision Logic
+
+1. **If** SoF and SoW evidence are consistent with the customer’s profile and transaction activity **→** proceed with onboarding/monitoring using standard measures.
+2. **If** SoF documentation is provided but SoW is unclear or inconsistent with the customer’s apparent wealth **→** request additional information and suspend high‑value transactions pending clarification.
+3. **If** neither SoF nor SoW can be adequately substantiated **→** consider declining or terminating the relationship and report to competent authorities if suspicious.
+
+## Operational Controls
+
+**Control objective:** Ensure that both the origin of specific funds and the overall accumulation of wealth are documented and assessed appropriately.
+
+**Control description:** Onboarding and review checklists require separate collection and evaluation of SoF and SoW evidence. The control assigns risk ratings that reflect discrepancies between SoF and SoW and triggers escalation when documentation is missing or implausible. Records are maintained in a way that distinguishes evidence for each determination.
+
+**Control owner:** Customer due‑diligence teams with oversight from Compliance.
+
+**Review frequency:** At onboarding for all customers; periodic reviews annually for standard risk and more frequently for high‑risk customers or large crypto exposures.
+
+**Dependencies:** Access to reliable documentation (bank statements, contracts, tax returns), analytical tools to assess plausibility and case management systems for record‑keeping.
+
+## Evidence & Audit Artifacts
+
+* Separate SoF documentation for each significant transaction and SoW documentation detailing overall wealth accumulation.
+* Assessment forms or reports indicating how evidence was evaluated and decisions reached.
+* Escalation logs and communications when discrepancies are found or additional documentation is requested.
+* Records of enhanced due‑diligence measures taken, including outcomes.
+
+## Edge Cases
+
+1. Crypto‑native entrepreneurs whose wealth derives from early token holdings or mining may lack traditional documentation; alternative evidence (e.g., blockchain provenance, exchange trading histories) must be evaluated.
+2. Customers with intermittent large inflows from DeFi yields or staking may present complex SoF patterns; documentation should align with on‑chain evidence and protocol statements.
+3. High‑net‑worth individuals with multi‑jurisdictional assets may require cooperative evidence collection across different legal systems; compliance should coordinate with international partners where lawful.
+
+## Anti‑Patterns
+
+1. Relying solely on a single payslip or transaction receipt to justify both the SoF and SoW for a customer with substantial crypto assets.
+2. Ignoring unexplained wealth accumulation because the declared SoF appears plausible, thereby missing potential laundering of illicit proceeds.
+
+## AI Usage Constraints
+
+AI can assist in matching documentation to transactions and flagging inconsistencies between SoF and SoW, but human analysts must interpret results, especially in complex cases. AI must not be used to infer wealth accumulation without explicit evidence.
+
+## Review & Governance
+
+This entry will be reviewed by Compliance and Legal. Updates will reflect new regulatory requirements or guidance related to SoF and SoW documentation. Changes will be recorded with a version history.
